@@ -1,6 +1,6 @@
 
 body{
-    
+
 }
 
 h1 {
@@ -14,18 +14,24 @@ h1 {
     text-align: center;
 }
 
+
 #colonne1 {
     display: flex;
-    flex: 33%;
+    flex: 25%;
     flex-direction: column;
 }
 #colonne2 {
     display: flex;
-    flex: 33%;
+    flex: 25%;
     flex-direction: column;
 }
 #colonne3 {
     display: flex;
-    flex: 33%;
+    flex: 25%;
+    flex-direction: column;
+}
+#colonne4 {
+    display: flex;
+    flex: 25%;
     flex-direction: column;
 }

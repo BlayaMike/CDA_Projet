@@ -9,7 +9,6 @@
     <title>CDA Projet</title>
 </head>
 <body>
-    <h1>Bonjour</h1>
-
+    
 </body>
 </html>
