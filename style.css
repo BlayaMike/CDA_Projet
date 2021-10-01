@@ -1,5 +1,83 @@
+/* global css */
 
-body{
-    text-align: center;
-    color : red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+h1 {
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 3rem;
+    font-size: normal;
+}
+li{
+    font-size: 2rem;
+}
+/* Header */
+
+.main-head {
+    background: #0a2b19;
+    color: #ffffff;
+}
+
+nav {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 0rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#logo {
+    flex: 1 1 40rem;
+}
+
+/* HERO */
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(rgb(0,0,0,0.3), transparent), url("/image/bank.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.hero h1 {
+    padding: 4rem;
+}
+
+button {
+    padding: 1.5rem 6rem;
+    background: #0a2b19;
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: none;
 }
