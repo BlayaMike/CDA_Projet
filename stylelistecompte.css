@@ -1,0 +1,31 @@
+
+body{
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    text-align: center;
+}
+
+#colonne1 {
+    display: flex;
+    flex: 33%;
+    flex-direction: column;
+}
+#colonne2 {
+    display: flex;
+    flex: 33%;
+    flex-direction: column;
+}
+#colonne3 {
+    display: flex;
+    flex: 33%;
+    flex-direction: column;
+}
