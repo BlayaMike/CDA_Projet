@@ -10,9 +10,6 @@
 </head>
 <body>
     <h1>Bonjour</h1>
-    <form action="test.php">
-        <input></input>
-        <button type="submit"></button>
-    </form>
+
 </body>
 </html>
