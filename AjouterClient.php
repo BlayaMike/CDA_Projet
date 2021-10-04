@@ -9,6 +9,7 @@ $typeCompte="";
 $CodeAgence=0;
 $nomAgence="";
 $fichier=".\bd\Client.txt";
+$client=[];
 
 $nomClient=readline("Veuillez entrer le nom du client : ");
 $prénomClient=readline("Veuillez entrer le prénom du client : ");
@@ -19,8 +20,7 @@ $typeCompte=readline("Quel sera le type de compte : ");
 $CodeAgence=readline("Code de l'agence : ");
 $nomAgence=readline("Nom de l'agence : ");
 
-$client=[];
-$leclient=[ 
+$client=[ 
 
         $nomClient,
         $prénomClient,
@@ -30,17 +30,12 @@ $leclient=[
         $typeCompte,
         $CodeAgence,
         $nomAgence
-
+        
 ];
 
-for($i=0;$i<2;$i++){
-    for($j=0;$j<2;$j++){
-        $client[]=$leclient;
-    }
-}
-
 $fp=fopen($fichier,"w");
-fputcsv($fp,$client);
 
-fclose($fichier);
+fputcsv($fp,$client,";");
+
+fclose($fp);
 ?>

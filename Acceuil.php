@@ -46,15 +46,6 @@
            
    </form>
 
-<<<<<<< HEAD
     <button type="submit" >Acceder</button>
     
     </section>
-=======
-    <title>CDA Projet</title>
-</head>
-<body>
-    
-</body>
-</html>
->>>>>>> a279c2633539bc2a6f172166cca1b15fe8edad9c

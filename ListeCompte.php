@@ -9,7 +9,6 @@
     <title>Liste des comptes</title>
 </head>
 <body>    
-    <?php ?>
     <div>
         <div>
         <h1>Liste des Comptes du client : </h1>
