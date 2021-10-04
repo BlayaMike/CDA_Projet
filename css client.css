@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+}
+.flex { 
+    display:flex;
+    text-align:left;
+    flex: 100%;
+}
+.solde { 
+    display:flex;
+    text-align: center;
+    flex: 72%
+    }
+.numcompte{
+    display: flex;
+    flex: 50%;
+    
+}
+.compte1 { display:flex;
+    text-align:left;min-width: 100%;margin-right: 40%;}
+        .sold1 { display:flex;
+            text-align: center;min-width: 100%;margin-left:30%}
+            .smil1 { display:flex;
+                text-align: center;min-width: 100%;margin-left:30%}
+.compte2 { display:flex;
+    text-align:left;min-width: 100%;margin-right: 40%;}
+        .sold2 { display:flex;
+            text-align: center;min-width: 100%;margin-left:30%}
+            .smil2 { display:flex;
+                text-align: center;min-width: 100%;margin-left:30%}
+.compte3 { display:flex;
+    text-align:left;min-width: 100%;margin-right: 40%;}
+        .sold3 { display:flex;
+            text-align: center;min-width: 100%;margin-left:30%}

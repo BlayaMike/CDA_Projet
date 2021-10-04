@@ -17,6 +17,7 @@
 
 <body>
 <main>
+    <section>
     <h4>Type de Compte <b>Livret A </b></h4>
     <hr/><hr> 
     <p>Nom :</p>
@@ -27,6 +28,7 @@
     <p>Numero de compte :</p>
     <p>Solde INT :</p>
     <p>Découvert autorisé TINYINT :</p>
+</section>
 </main>
 </body>
 
