@@ -9,33 +9,74 @@
     <title>CDA Projet | Acceuil</title>
   </head>
 
-</html>
+
 
 <header class="main-head"> 
-     <nav> 
-         <h1 id="logo">BANK</h1>
-        
-        <ul>
+  
+  <nav> 
+         <h1 id="logo">| THE-BANK $ |</h1>
+    <ul>
           <li>Accueil</li>
           <li>menu</li>
           <li>Contact</li>
     </ul>
+  </nav>
 
-    </nav>
 </header>
 
-    <main>
+<main>
+    
+  <section id="recherche client" >
+  <section class="hero">
+  
+  <form>   
+    <h1>Rechercher un client </h1>
+  </form> 
+  <input type="nom" placeholder="nom..." />
+  <input type="prenom" placeholder="prenom..." />
+  <input type="numero de compte" placeholder="numero de compte..." />
+  <input type="Identifiant" placeholder="Identifiant..." />
+  <button type="submit" >Acceder</button>    
+    
+   
+ <!-- Slideshow container -->
+<div class="slideshow-container">
 
-      <section id="recherche client" ></section>
-    </main>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="bank2.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
 
-</section>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="bank2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
 
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="bank2.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
 
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br> 
 
-</section>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+</main> 
+</section>           
 
-    <section class="hero">
+</html>     
     
     <section id="recherche client" >
        

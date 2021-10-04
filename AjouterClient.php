@@ -8,7 +8,7 @@ $NumCompte="";
 $typeCompte="";
 $CodeAgence=0;
 $nomAgence="";
-$fichier=".\bd\Client.txt";
+$fichier=".\bd\Client.csv";
 $client=[];
 
 $nomClient=readline("Veuillez entrer le nom du client : ");
@@ -30,12 +30,12 @@ $client=[
         $typeCompte,
         $CodeAgence,
         $nomAgence
-        
+
 ];
 
 $fp=fopen($fichier,"w");
 
-fputcsv($fp,$client,";");
+fputs($fp,$client,";");
 
 fclose($fp);
 ?>
