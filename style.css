@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+=======
 /* global css */
 
 * {
@@ -6,6 +14,7 @@
     box-sizing: border-box;
 }
 
+>>>>>>> e818233cbc6aa57d837a81eed2e5c54ee05de684
 a {
     color: #ffffff;
     text-decoration: none;
@@ -17,6 +26,12 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+<<<<<<< HEAD
+h4 {
+    font-size: 3rem;
+    font-size: normal;
+}
+=======
 h3 {
     font-size: 3rem;
     font-size: normal;
@@ -24,6 +39,7 @@ h3 {
 li{
     font-size: 1.5rem;
 }
+>>>>>>> e818233cbc6aa57d837a81eed2e5c54ee05de684
 /* Header */
 
 .main-head {
@@ -41,6 +57,8 @@ nav {
     margin: auto;
     padding: 2rem;
     flex-wrap: wrap;
+<<<<<<< HEAD
+=======
 }
 
 
@@ -101,4 +119,9 @@ button {
     #logo{
         padding: 1.5rem;
     }
+<<<<<<< HEAD
 }
+=======
+>>>>>>> e818233cbc6aa57d837a81eed2e5c54ee05de684
+}
+>>>>>>> 235a9148f25f28a863a4fc6e3ebc0b23339a8b3c
