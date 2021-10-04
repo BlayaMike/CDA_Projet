@@ -10,19 +10,18 @@
 </head>
 <body>
 <header class="main-head"> 
-  
-  <nav> 
-         <label id="logo">| THE-BANK $ |</label>
-    <ul id="nav_ul">
-          <li>Accueil</li>
-          <li>menu</li>
-          <li>Contact</li>
-    </ul>
-  </nav>
-
+    <nav> 
+        <label id="logo">| THE-BANK $ |</label>
+        <ul id="nav_ul">
+            <li>Accueil</li>
+            <li>menu</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
 </header>
     <div>
         <div>
+
         <p>Nom du client : </p>
         <p>Prénom du client : </p>
         <p>Date de naissance : </p>
