@@ -10,9 +10,7 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
-html {
-    font-size: 62.5%;
-}
+
 h1 {
     font-size: 3.5rem;
 }
@@ -24,7 +22,7 @@ h3 {
     font-size: normal;
 }
 li{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 /* Header */
 
@@ -32,6 +30,7 @@ li{
     background: #0a2b19;
     color: #ffffff;
 }
+
 
 nav {
     min-height: 10vh;
@@ -44,7 +43,9 @@ nav {
     flex-wrap: wrap;
 }
 
-nav ul {
+
+
+#nav_ul {
     display: flex;
     flex: 1 1 40rem;
     justify-content: space-around;
@@ -53,6 +54,7 @@ nav ul {
 }
 #logo {
     flex: 1 1 40rem;
+    font-size: 2.5rem;
 }
 
 /* HERO */

@@ -8,11 +8,21 @@
 
     <title>Liste des comptes</title>
 </head>
-<body>    
+<body>
+<header class="main-head"> 
+  
+  <nav> 
+         <label id="logo">| THE-BANK $ |</label>
+    <ul id="nav_ul">
+          <li>Accueil</li>
+          <li>menu</li>
+          <li>Contact</li>
+    </ul>
+  </nav>
+
+</header>
     <div>
         <div>
-        <h1>Liste des Comptes du client : </h1>
-        <hr>
         <p>Nom du client : </p>
         <p>Prénom du client : </p>
         <p>Date de naissance : </p>

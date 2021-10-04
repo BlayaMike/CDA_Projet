@@ -1,11 +1,11 @@
 
-body{
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
-}
+
 
 .flex {
     display: flex;
@@ -34,4 +34,47 @@ h1 {
     display: flex;
     flex: 25%;
     flex-direction: column;
+}
+
+.main-head {
+    background: #0a2b19;
+    color: #ffffff;
+}
+
+#logo {
+    flex: 1 1 40rem;
+    font-size: 2.5rem;
+}
+
+#nav_ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 2rem;
+}
+
+nav {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+li{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 885px){
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 1.5rem;
+    }
 }

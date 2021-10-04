@@ -1,4 +1,11 @@
 <?php
+
+function AjourerUneAgence($bdagence){
+        for ($i=0; $i < ; $i++) { 
+                
+        }
+}
+
 $idClient=0;
 $nomClient="";
 $prénomClient="";
@@ -20,7 +27,7 @@ $typeCompte=readline("Quel sera le type de compte : ");
 $CodeAgence=readline("Code de l'agence : ");
 $nomAgence=readline("Nom de l'agence : ");
 
-$client=[ 
+$client[]=[ 
 
         $nomClient,
         $prénomClient,
@@ -33,9 +40,11 @@ $client=[
 
 ];
 
-$fp=fopen($fichier,"w");
+$fp=fopen($fichier,"a+");
 
-fputs($fp,$client,";");
+foreach($client as $cli){
+        fputcsv($fp,$cli,";");
+}
 
 fclose($fp);
 ?>

@@ -14,8 +14,8 @@
 <header class="main-head"> 
   
   <nav> 
-         <h1 id="logo">| THE-BANK $ |</h1>
-    <ul>
+         <label id="logo">| THE-BANK $ |</label>
+    <ul id="nav_ul">
           <li>Accueil</li>
           <li>menu</li>
           <li>Contact</li>
@@ -78,15 +78,3 @@
 
 </html>     
     
-    <section id="recherche client" >
-       
-    <h1>Rechercher un client </h1>
-      
-    <form>
-        <input type="Identifiant" placeholder="Entrer Identifiant..." />
-           
-   </form>
-
-    <button type="submit" >Acceder</button>
-    
-    </section>
