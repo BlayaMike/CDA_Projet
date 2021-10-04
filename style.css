@@ -41,11 +41,12 @@ nav {
     width: 90%;
     margin: auto;
     padding: 2rem;
+    flex-wrap: wrap;
 }
 
 nav ul {
     display: flex;
-    flex: 1 1 0rem;
+    flex: 1 1 40rem;
     justify-content: space-around;
     align-items: center;
     list-style: none;
@@ -57,27 +58,45 @@ nav ul {
 /* HERO */
 .hero {
     min-height: 90vh;
-    background: linear-gradient(rgb(0,0,0,0.3), transparent), url("/image/bank.jpg");
+    background: linear-gradient(rgb(0,0,0,0.5), transparent), url("/image/bank2.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 25% 75%;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     
 }
 
 .hero h1 {
     padding: 4rem;
-}
+    justify-content: center;
+    align-items: center;
 
+
+}
+input{
+    padding: 1rem;
+    font-size: 1.5rem;
+     
+}
 button {
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 5rem;
     background: #0a2b19;
     color: #ffffff;
     font-size: 1.8rem;
     cursor: pointer;
     border: none;
+
+}
+@media screen and (max-width: 885px){
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 1.5rem;
+    }
 }
