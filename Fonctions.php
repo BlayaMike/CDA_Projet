@@ -13,9 +13,9 @@ $adressAgence="";
 $fichierAgence=".\bd\Agence.csv";
 $fichierClient=".\bd\Client.csv";
 $fichierCompte=".\bd\Compte.csv";
-$clients=[["ID_CLI","NOM_CLI","PRENOM_CLI","DATE_DE_NAISSANCE","CODE_AGENCE","NOM_AGENCE"]];
-$agences=[["CODE_AGENCE","NOM","ADRESSE"]];
-$comptes=[["ID_COMPTE","TYPE","ID_CLI","NOM_CLI","PRENOM_CLI","CODE_AGENCE","NOM_AGENCE"]];
+$agences=[["CODE_AGENCE","NOM_AGENCE","ADRESSE_AGENCE"]];
+$clients=[["CODE_AGENCE","ID_CLI","NOM_CLI","PRENOM_CLI","DATE_DE_NAISSANCE","NOM_AGENCE"]];
+$comptes=[["ID_CLI","CODE_AGENCE","ID_COMPTE","TYPE","NOM_CLI","PRENOM_CLI","NOM_AGENCE"]];
 
 function AjouterUneAgence($agences){
 
@@ -31,14 +31,15 @@ function AjouterUneAgence($agences){
 }
 
 
+
+$fp=fopen($fichierAgence,"a");
 $agences=AjouterUneAgence($agences);
-$fp=fopen($fichierAgence,"w+");
 foreach($agences as $agence){
         fputcsv($fp,$agence,",");
 }
 unset($agence);
 fclose($fp);
-
+/*
 
 function AjouterUnClient($agences,$clients){
 
@@ -109,5 +110,5 @@ $fp3=fopen($fichierCompte,"w+");
 foreach($comptes as $compte){
         fputcsv($fp3,$compte,";");
 }
-fclose($fp3);
+fclose($fp3);*/
 ?>
