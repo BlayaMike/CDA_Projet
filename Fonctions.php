@@ -19,26 +19,17 @@ $comptes=[["ID_CLI","CODE_AGENCE","ID_COMPTE","TYPE","NOM_CLI","PRENOM_CLI","NOM
 
 function AjouterUneAgence($agences){
 
-        $bdagence = [];
-
-        $bdagence[]=readline("Code de l'agence : ");
-        $bdagence[]=readline("Nom de l'agence : ");
-        $bdagence[]=readline("Adresse de l'agence : ");
-
+        $bdagences = [];
         $agences[]=$bdagence;
-
-        return $agences;
+return $agences;
 }
-
-
-
-$fp=fopen($fichierAgence,"a");
 $agences=AjouterUneAgence($agences);
+$fp=fopen($fichierAgence,"a+");
 foreach($agences as $agence){
         fputcsv($fp,$agence,",");
 }
 unset($agence);
-fclose($fp);
+fclose($fp)
 /*
 
 function AjouterUnClient($agences,$clients){
