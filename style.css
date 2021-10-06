@@ -6,14 +6,15 @@
 
 a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3.5rem;   
 }
 h2 {
     font-size: 2rem;
+    
 }
 h4 {
     font-size: 3rem;
@@ -26,12 +27,18 @@ h4 {
     color: #ffffff;
 }
 
+<<<<<<< HEAD
+.liste-items{
+=======
 
 nav {
     min-height: 10vh;
+>>>>>>> a9c861eba8c7edb8b913c1cae4016209a7fc91dc
     display: flex;
-    align-items: center;
+    color: #ffffff;
     justify-content: center;
+<<<<<<< HEAD
+=======
     width: 90%;
     margin: auto;
     padding: 2rem;
@@ -42,6 +49,7 @@ nav {
 
 #nav_ul {
     display: flex;
+>>>>>>> a9c861eba8c7edb8b913c1cae4016209a7fc91dc
     flex: 1 1 40rem;
     justify-content: space-around;
     align-items: center;
@@ -64,22 +72,30 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
 
-    
+nav {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    flex-wrap: wrap;  
 }
 
 .hero h1 {
     padding: 4rem;
     justify-content: center;
     align-items: center;
-
-
 }
+
 input{
     padding: 1rem;
-    font-size: 1.5rem;
-     
+    font-size: 1.5rem;  
 }
+
 button {
     padding: 1.5rem 5rem;
     background: #0a2b19;
@@ -87,16 +103,57 @@ button {
     font-size: 1.8rem;
     cursor: pointer;
     border: none;
-
 }
+
 @media screen and (max-width: 885px){
     nav{
         text-align: center;
+        
     }
     #logo{
         padding: 1.5rem;
     }
 }
+<<<<<<< HEAD
+/* menu */
+
+.items {
+    cursor: pointer;
+    margin: 0 20px;
+    flex-shrink: 0;
+}
+.items-sous-liste {
+    list-style: none;
+}    
+
+.main-head .items {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.main-head .items a {
+    display: block;
+    padding: 20px;
+}
+
+
+.main-head .items:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #0a2b19;
+    padding: left 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.sub-menu li {
+    display: block;
+=======
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -190,4 +247,5 @@ button {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+>>>>>>> a9c861eba8c7edb8b913c1cae4016209a7fc91dc
 }

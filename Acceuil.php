@@ -12,42 +12,44 @@
 <header class="main-head"> 
   
   <nav> 
-    <label id="logo">| THE-BANK $ |</label>
-    <ul id="nav_ul">
-          <li>Accueil</li>
-          <li>menu</li>
-          <li>Contact</li>
+         <h1 id="logo">| THE-BANK $ |</h1>
+    <ul class="liste-items">
+          <li class="items">Acceuil</li>
+          <li class="items">
+            Menu
+            <span>&#9660;</span>
+            <ul class="sub-menu">
+              <li class="items-sous-liste">lorem</li>
+              <li class="items-sous-liste">lorem</li>
+              <li class="items-sous-liste">lorem</li>
+          </li>
+            </ul>
+
+          <li class="items">Contact</li>
     </ul>
   </nav>
-</header> 
-<form name="inscription" method="post" action=".php">
-    Entrez votre Code_Agence : <input type="text" name="Code_Agence"/> <br/>
-    Entrez votre Nom_Agence : <input type="text" name="Nom_Agence"/> <br/>
-    Entrez votre Adress_Agence : <input type="text" name="Adress_Agence"/> <br/>
-    <input type="submit" name="valider" value="OK"/>
-</form>
 
-<?php 
+</header>
 
-$CodeAgence=0;
-$nomAgence="";
-$adressAgence="";
-$fichierAgence=".\bd\Agence.csv";
+<main>
+    
+  <section id="recherche client" >
+  <section class="hero">
+  
+  <form>   
+    <h1>Rechercher un client </h1>
+  </form> 
+  <input type="nom" placeholder="nom..." />
+  <input type="prenom" placeholder="prenom..." />
+  <input type="numero de compte" placeholder="numero de compte..." />
+  <input type="Identifiant" placeholder="Identifiant..." />
+  <button type="submit" >Acceder</button>  
 
-$Code_Agence = $_POST('Code_Agence');
-$Nom_Agence = $_POST('Nom_Agence');
-$Adress_Agence = $_POST('Adress_Agence');
+</section>     
+</main> 
+          
 
-$agences=[];
+</html>     
+    
+     
 
-$agences=AjouterUneAgence($agences);
-
-$fp=fopen($fichierAgence,"a+");
-foreach($agences as $agence){
-        fputcsv($fp,$agence,",");
-}
-unset($agence);
-fclose($fp);
-
-?>
-</body>
