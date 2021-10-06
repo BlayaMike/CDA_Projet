@@ -36,18 +36,19 @@
   <section id="recherche client" >
   <section class="hero">
   
-  <form>   
-    <h1>Rechercher un client </h1>
+  <form method=post>   
+    <h1>Rechercher une Agence </h1>
+    <input type="text" placeholder="Code de l'agence..." id="Code_Agence">
+    <input type="text" placeholder="Nom de l'agence..." id="Nom_Agence" />
+    <input type="text" placeholder="Adress de l'agence..." id="Adress_Agence" />
+    <input type="button" id="button" value="Envoyer" /> 
   </form> 
-  <input type="nom" placeholder="nom..." />
-  <input type="prenom" placeholder="prenom..." />
-  <input type="numero de compte" placeholder="numero de compte..." />
-  <input type="Identifiant" placeholder="Identifiant..." />
-  <button type="submit" >Acceder</button>  
-
 </section>     
 </main> 
-          
+<script src="index.js">
+
+
+</script>          
 
 </html>     
     
