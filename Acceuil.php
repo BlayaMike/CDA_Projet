@@ -12,42 +12,45 @@
 <header class="main-head"> 
   
   <nav> 
-    <label id="logo">| THE-BANK $ |</label>
-    <ul id="nav_ul">
-          <li>Accueil</li>
-          <li>menu</li>
-          <li>Contact</li>
+         <h1 id="logo">| THE-BANK $ |</h1>
+    <ul class="liste-items">
+          <li class="items">Acceuil</li>
+          <li class="items">
+            Menu
+            <span>&#9660;</span>
+            <ul class="sub-menu">
+              <li class="items-sous-liste">lorem</li>
+              <li class="items-sous-liste">lorem</li>
+              <li class="items-sous-liste">lorem</li>
+          </li>
+            </ul>
+
+          <li class="items">Contact</li>
     </ul>
   </nav>
-</header> 
-<form name="inscription" method="post" action=".php">
-    Entrez votre Code_Agence : <input type="text" name="Code_Agence"/> <br/>
-    Entrez votre Nom_Agence : <input type="text" name="Nom_Agence"/> <br/>
-    Entrez votre Adress_Agence : <input type="text" name="Adress_Agence"/> <br/>
-    <input type="submit" name="valider" value="OK"/>
-</form>
 
-<?php 
+</header>
 
-$CodeAgence=0;
-$nomAgence="";
-$adressAgence="";
-$fichierAgence=".\bd\Agence.csv";
+<main>
+    
+  <section id="recherche client" >
+  <section class="hero">
+  
+  <form method=post>   
+    <h1>Rechercher une Agence </h1>
+    <input type="text" placeholder="Code de l'agence..." id="Code_Agence">
+    <input type="text" placeholder="Nom de l'agence..." id="Nom_Agence" />
+    <input type="text" placeholder="Adress de l'agence..." id="Adress_Agence" />
+    <input type="button" id="button" value="Envoyer" /> 
+  </form> 
+</section>     
+</main> 
+<script src="index.js">
 
-$Code_Agence = $_POST('Code_Agence');
-$Nom_Agence = $_POST('Nom_Agence');
-$Adress_Agence = $_POST('Adress_Agence');
 
-$agences=[];
+</script>          
 
-$agences=AjouterUneAgence($agences);
+</html>     
+    
+     
 
-$fp=fopen($fichierAgence,"a+");
-foreach($agences as $agence){
-        fputcsv($fp,$agence,",");
-}
-unset($agence);
-fclose($fp);
-
-?>
-</body>

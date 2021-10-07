@@ -8,8 +8,8 @@ $email="";
 $NumCompte="";
 $typeCompte="";
 $CodeAgence=0;
-$nomAgence="";
-$adressAgence="";
+$NomAgence="";
+$AdressAgence="";
 $fichierAgence=".\bd\Agence.csv";
 $fichierClient=".\bd\Client.csv";
 $fichierCompte=".\bd\Compte.csv";
@@ -22,31 +22,23 @@ $choixmenu=0;
 $data="";
 
 function AjouterUneAgence($agences){
-
-<<<<<<< HEAD
-        $bdagences = [];
-=======
+        
         $bdagence = [];
+        
+        $CodeAgence = readline("Code Agence ");
+        $NomAgence = readline("Nom Agence ");
+        $AdressAgence = readline("Adress Agence ");
 
-        $bdagence[]=$CodeAgence; 
-        $bdagence[]=$nomAgence;
-        $bdagence[]=$adressAgence;
+        $bdagence[] = $CodeAgence;
+        $bdagence[] = $NomAgence;
+        $bdagence[] = $AdressAgence;
 
->>>>>>> e42669221ecf59c7099ee11e88b726c494497eee
-        $agences[]=$bdagence;
-return $agences;
+
+        $agences[] = $bdagence;
+
+        return $agences;
+
 }
-<<<<<<< HEAD
-$agences=AjouterUneAgence($agences);
-$fp=fopen($fichierAgence,"a+");
-foreach($agences as $agence){
-        fputcsv($fp,$agence,",");
-}
-unset($agence);
-fclose($fp)
-/*
-=======
->>>>>>> e42669221ecf59c7099ee11e88b726c494497eee
 
 function AjouterUnClient($agences,$clients){
         $client = [];
@@ -95,20 +87,7 @@ function AjouterUnCompteClient($clients,$comptes){
                         }
                         return $clients;
                 }
-/*
 
-
-
-$agences=AjouterUneAgence($agences);
-$fp=fopen($fichierAgence,"a+");
-foreach($agences as $agence){
-        fputcsv($fp,$agence,",");
-}
-unset($agence);
-fclose($fp);
-*/
-
-/*
 echo (  "Veuillez saisir :
                 1 : Pour Ajouter une agence ;
                 2 : Pour Ajouter un client ;
@@ -125,15 +104,13 @@ switch ($choixmenu) {
                 echo("Vous n'avez rien fait");
                 exit;
         case '1':
-                
                 $agences=AjouterUneAgence($agences);
                 $fp=fopen($fichierAgence,"a+");
                 foreach($agences as $agence){
                         fputcsv($fp,$agence,",");
                 }
                 unset($agence);
-                fclose($fp);
-                
+                fclose($fp);              
                 break;
         case '2':
                 $clients= AjouterUnClient($agences,$clients);
@@ -145,6 +122,7 @@ switch ($choixmenu) {
                 fclose($fp);
                 break;
         case '3':
+
                 $clients= AjouterUnCompteClient($clients,$comptes);
                 
                 $fp=fopen($fichierCompte,"w+");
@@ -157,5 +135,5 @@ switch ($choixmenu) {
                 echo("Erreur");
                 break;
 }
-*/
+
 ?>
