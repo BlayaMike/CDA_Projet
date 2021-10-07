@@ -174,12 +174,42 @@ function AjouterUnCompteClient($agences,$clients,$comptes){
         return $comptes;
         
 }
+function AfficherAgence(){
+
+        $fichierAgence = FILE_AGENCE;
+
+        $codeagence2=fopen($fichierAgence, "r");
+
+        while(!feof($codeagence2)){
+                $agences [] = fgetcsv($codeagence2,1024,",");
+        }
+        
+        fclose($codeagence2);
+
+        while(1){
+                $x=readline("Code Agence : ");
+                foreach($agences as $val){
+                        if($val[0]!=null){
+                                if($x==$val[0]){
+                                        print_r($val);
+                                        break 2;
+                                }
+                        }
+                        else{     
+                                echo("l'agence n'existe pas. veuillez reesayer. \n");
+                        }
+                }
+                unset($val);
+        }
+}
+
 
 
 echo (  "Veuillez saisir :
                 1 : Pour Ajouter une agence ;
                 2 : Pour Ajouter un client ;
                 3 : Pour Ajouter un compte ;
+                4 : Afficher une agence ;
                 8 : Pour ne rien faire ;
 ");
 
@@ -217,6 +247,9 @@ switch ($choixmenu) {
                         fputcsv($fp,$compte,",");
                 }
                 fclose($fp);
+
+        case '4' :
+                AfficherAgence();
         default :
                 break;
 }
