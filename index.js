@@ -9,15 +9,12 @@ const code=0;
 const nom="";
 const adress="";
 */
-//button.addEventListener("click",test);
+button.addEventListener("click",test);
 
 var txtFile = new XMLHttpRequest();
-txtFile.open("GET", "file://d:/data.txt", true);
-txtFile.onreadystatechange = function()
-{
-    allText = txtFile.responseText;
-    allTextLines = allText.split(/\r\n|\n/);
-}
+
+txtFile.open("GET", ".\bd\Agence.csv", true);
+
 
 /*
 function test(){
