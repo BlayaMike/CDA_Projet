@@ -1,5 +1,5 @@
 <?php
-$codeagence2=fopen("Agence.csv", "w+");
+$codeagence2=fopen("Agence.csv", "r");
 
 $agences=[
     ["62","AGENCE D_ARRAS","10 rue Pasteur"],
@@ -14,7 +14,7 @@ foreach ($agences as $value) {
     if($agences[$i] && $value[0]==$code){
         print_r($value);
         break;
-        fputcsv($codeagence2, $value);
+        fgetcsv($codeagence2);
     
     }  
     else {
