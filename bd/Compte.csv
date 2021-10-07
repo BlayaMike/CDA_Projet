@@ -1,2 +1,4 @@
 CODE_AGENCE,ID_CLI,ID_COMPTE,TYPE_COMPTE,NOM_CLI,PRENOM_CLI
 1,1,1,Livret_A,Blaya,Mike
+1,2,2,Livret_A,Blaya,Mike
+1,3,10,Livret_A,Blaya,Mike
