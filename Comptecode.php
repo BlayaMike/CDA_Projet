@@ -17,8 +17,7 @@ foreach ($Compte as $value) {
         print_r($value);
     }  
     else {
-        echo("compte introuvable 
-        ");
+        echo("compte introuvable ");
          }  
     $i++;
     
