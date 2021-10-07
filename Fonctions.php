@@ -2,17 +2,6 @@
 
 require("constants.php");
 
-$idClient=0;
-$nomClient="";
-$prénomClient="";
-$dateNaissance="";
-$email="";
-$NumCompte="";
-$typeCompte="";
-$CodeAgence=0;
-$NomAgence="";
-$AdressAgence="";
-
 $fichierAgence = FILE_AGENCE;
 $fichierClient = FILE_CLIENT;
 $fichierCompte = FILE_COMPTE;
@@ -174,6 +163,7 @@ function AjouterUnCompteClient($agences,$clients,$comptes){
         return $comptes;
         
 }
+/*
 function AfficherAgence(){
 
         $fichierAgence = FILE_AGENCE;
@@ -202,18 +192,43 @@ function AfficherAgence(){
                 unset($val);
         }
 }
+*/
 
+function AfficherCompte(){
 
+        $fichierCompte= FILE_COMPTE;
+
+        $fp=fopen($fichierCompte, "r");
+
+        while(!feof($fp)){
+                $comptes [] = fgetcsv($fp,1024,",");
+        }
+        
+        fclose($fp);
+        
+        while(1){
+                $x = readline("Numéro de compte rechercher ");
+                foreach($comptes as $val){
+                        foreach ($val as $val2) {
+                                if($val2[2]==$x){
+                                        print_r($val2);
+                                }
+                        }
+                unset($val,$val2);
+                }
+        }
+}
 
 echo (  "Veuillez saisir :
-                1 : Pour Ajouter une agence ;
-                2 : Pour Ajouter un client ;
-                3 : Pour Ajouter un compte ;
-                4 : Afficher une agence ;
-                8 : Pour ne rien faire ;
+                1 : Pour Ajouter une agence :
+                2 : Pour Ajouter un client :
+                3 : Pour Ajouter un compte :
+                4 : Rechercher un compte : 
+                5 : Recherche d'un client :
+                6 : Afficher la liste des comptes d'un client :
+                7 : Imprimer les infos d'un client :
+                8 : Quitter le programme : 
 ");
-
-
 
 $choixmenu=readline("Que souhaitez-vous faire : ");
 
@@ -249,7 +264,9 @@ switch ($choixmenu) {
                 fclose($fp);
 
         case '4' :
-                AfficherAgence();
+                AfficherCompte();
+        case '5' :
+
         default :
                 break;
 }
