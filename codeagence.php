@@ -1,29 +1,33 @@
 <?php
+while(1){
 
-$agences=[["CODE_AGENCE","NOM_AGENCE","ADRESSE_AGENCE"]];
+    $agences=[["CODE_AGENCE","NOM_AGENCE","ADRESSE_AGENCE"]];
 $code=readline("entrez votre code d'agence : ");
 if ($code==62000) {
     echo("Agence d'Arras
-10 rue pasteur");
+10 rue pasteur \n");
+break;
 }
 elseif($code==62400) {
     echo("Agence de Béthune 
-3 rue des lilas");
+3 rue des lilas \n");
+break;
 }
 elseif($code==59000) {
     echo("Agence de Lille
-18 boulevard Vauban");
+18 boulevard Vauban \n");
+break;
 }
 else { 
-    echo("agence non attribuée");
+    echo("agence non attribuée \n");
 
 } 
+}
+while(1){
 $clients=[["CODE_AGENCE","ID_CLI","NOM_CLI","PRENOM_CLI","DATE_DE_NAISSANCE","NOM_AGENCE"]];
 
 $ID;
-$ID=readline("
-
-entrez votre identifiant");
+$ID=readline("entrez votre identifiant \n");
 if ($ID==0001) {
     echo( "62000 
 Compte : 01234
@@ -31,6 +35,7 @@ Type : débiteur
 Martin Jacques 
 17/10/1970
 Agence d'Arras");
+break;
 }
 elseif($ID==0002) {
     echo( "62400 
@@ -39,6 +44,7 @@ elseif($ID==0002) {
     Jean Dupont 
     15/06/1960
     Agence de Béthune");
+    break;
 }
 elseif($ID==0003) {
     echo( "62400 
@@ -47,11 +53,13 @@ elseif($ID==0003) {
     Martine Delporte 
     05/02/1980
     Agence de Lille");  
+    break;
 }
 else {
     echo("entrez un ID valide");
-    return $ID;
 }
+}
+while(3){
 $comptes=[["ID_CLI","CODE_AGENCE","ID_COMPTE","TYPE","NOM_CLI","PRENOM_CLI","NOM_AGENCE"]];
 $compt=readline("
 
@@ -63,6 +71,7 @@ Type : débiteur
 Martin Jacques 
 17/10/1970
 Agence d'Arras");
+break;
 }
 elseif($compt==12345) {
     echo( "62400 
@@ -71,6 +80,7 @@ elseif($compt==12345) {
     Jean Dupont 
     15/06/1960
     Agence de Béthune");
+    break;
 }
 elseif($compt==56789) {
     echo( "62400 
@@ -79,9 +89,10 @@ elseif($compt==56789) {
     Martine Delporte 
     05/02/1980
     Agence de Lille");  
+    break;
 }
 else {
     echo("entrez un compte valide");
-    return $compte;
+}
 }
 ?>
