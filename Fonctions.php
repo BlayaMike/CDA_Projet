@@ -281,25 +281,18 @@ function AfficherUnClient($choix){
 function AfficherListeCompte($id_Agence,$id_Cli){
 
         $filename=fopen(FILE_COMPTE,"r");
-        $filename2=fopen(FILE_CLIENT,"r");
 
         while(!feof($filename)){
                 $comptes[]= fgetcsv($filename,1024,",");
         }
-        while(!feof($filename2)){
-                $clients[]= fgetcsv($filename2,1024,",");
-        }
 
         fclose($filename);
-        fclose($filename2);
         foreach($comptes as $val){
-                foreach($clients as $cli){
-                        if($val != null || $cli != null){
-                                if($val[0]==$cli[0] && $val[1]==$id_Cli){
-                                        print_r($val);
-                                }
+                if($val != null){
+                        if($val[0]==$id_Agence && $val[1]==$id_Cli){
+                                print_r($val);
                         }
-                }  
+                }
         }
 }
 
