@@ -9,7 +9,7 @@ foreach ($client as $value) {
     $i=0;
     if($client[$i] && $value[0]==$code){
         print_r($value);
-        
+        break;
         fgetcsv($codeclient);
     }  
     else {

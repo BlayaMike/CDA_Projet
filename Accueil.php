@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+
+   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
-    <title>Compte</title>
-</head>    
-<header class="main-head">
-<nav>
+    <title>CDA Projet | Accueil</title>
+  </head>
+<body>
+<header class="main-head"> 
+  
+  <nav> 
 
 <h1 id="logo">| THE-BANK $ |</h1>
-    
+
 <ul class="liste-items">
           
 <li class="items">    
-    <a href = "Accueil.php">Acceuil</a>
+    <a href = "Accueil.php">Accueil</a>
 </li>
           
 <li class="items">
@@ -26,12 +29,12 @@
    
 
 <li class="items-sous-liste">
-    <a href="Compte.php">compte</a> 
+    <a href="recherchecompte.php">Recherche un Compte</a> 
 </li>
   
 
 <li class="items-sous-liste">
-    <a href=".......php">......</a> 
+    <a href="rechercheclient.php">Recherche Client</a> 
 </li>
  
 
@@ -47,26 +50,28 @@
     <a href="......php">Contact</a>
 </li>
     
-</ul>
-
+</ul>    
 </nav>
+
 </header>
 
-<body>
 <main>
-<section>
-    <h4>Type de Compte <b>Livret A </b></h4>
-    <hr/><hr> 
-    <p>Nom :</p>
-    <p>Prénom :</p>
-    <p>Date de naissance :</p>
-    <p>Email :</p>
-    <hr/><hr>
-    <p>Numero de compte :</p>
-    <p>Solde INT :</p>
-    <p>Découvert autorisé TINYINT :</p>
-</section>
-</main>
-</body>
+<section class="hero">
 
-</html>
+<form method=post>   
+<button type="submit" formaction="recherchecompte.php">Rechercher un Compte</button>
+<button type="submit" formaction="rechercheclient.php">Rechercher un Client</button>
+
+</form>
+</section>     
+</main> 
+
+<script src="index.js">
+
+
+</script>          
+
+</html>     
+    
+     
+

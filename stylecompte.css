@@ -14,7 +14,7 @@ h1 {
 /* Header */
 
 .main-head {
-    background: #0a2b19;
+    background-color: #0a2b19;
     color: #ffffff;
 }
 
@@ -25,6 +25,16 @@ nav {
     justify-content: center;
     width: 90%;
     margin: auto;
+    padding: 1.2rem;
+    flex-wrap: wrap;  
+    background-color: #0a2b19;
+
+    /*min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
     padding: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
 }
