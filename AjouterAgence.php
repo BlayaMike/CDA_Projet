@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
-    <title>CDA Projet | Recherche Client </title>
+    <title>CDA Projet | Accueil</title>
   </head>
 <body>
 <header class="main-head"> 
   
-  <nav> 
+<nav> 
 
-  <h1 id="logo"><a href = "Accueil.php">| THE-BANK $ |</a></h1>
+<h1 id="logo"><a href = "Accueil.php">| THE-BANK $ |</a></h1>
 
 <ul class="liste-items">
           
@@ -27,6 +27,7 @@
 
 <ul class="sub-menu">
    
+
 <li class="items-sous-liste">
     <a href="recherchecompte.php">Recherche Compte</a> 
 </li>
@@ -38,41 +39,43 @@
  
 
 <li class="items-sous-liste">
-<a href="AjouterAgence.php">Ajouter une Agence</a> 
+<a href="AjouterAgence.php">Ajouter une Agence</a>  
 </li>
 
+
 <li class="items-sous-liste">
-<a href="Ajouterclient.php">Ajouter un client</a>  
+<a href="Ajouterclient.php">Ajouter un client</a> 
 </li>
+
 
 <li class="items-sous-liste">
 <a href="Ajoutercompte.php">Ajouter un Compte</a>  
 </li>
 
+
 </ul>          
 
 
 <li class="items">
-    <a href="....php">Contact</a>
+    <a href="......php">Contact</a>
 </li>
     
 </ul>    
   </nav>
 
 </header>
-
 <main>
     
   <section id="recherche client" >
   <section class="hero">
   
      
-    <h1>Rechercher un client </h1>
-    <input type="text" placeholder="Nom..." id="Nom_Client"><br>
-    <input type="text" placeholder="Numero de compte..." id="Numero de compte_Client" /><br>
-    <input type="text" placeholder="ID..." id="_" /><br>
+    <h1>Ajouter une Agence </h1>
+    <input type="text" placeholder="Nom..." id="Nom_Agence">
+    <input type="text" placeholder="Code..." id="Code_Agence" />
+    <input type="text" placeholder="Adresse..." id="Adresse_Agence" />
     <input type="button" id="button" value="Envoyer" /> 
-
+  
 </section>     
 </main> 
 <script src="index.js">

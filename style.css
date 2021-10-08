@@ -43,6 +43,11 @@ h4 {
 }
 
 /* HERO */
+
+.post {
+    padding: 2rem;
+    align-items: center;
+}
 .hero {
     min-height: 90vh;
     background: linear-gradient(rgb(0,0,0,0.5), transparent), url("/image/bank2.jpg");
@@ -54,6 +59,7 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex: 2rem;
 }
 
 nav {
@@ -75,11 +81,11 @@ nav {
 
 input{
     padding: 1rem;
-    font-size: 1rem;  
+    font-size: 1rem;
 }
 
 button {
-    padding: 1.5rem 8rem;
+    padding: 1.5rem 6rem;
     background: #0a2b19;
     color: #ffffff;
     font-size: 1.8rem;
@@ -135,5 +141,5 @@ button {
 
 .sub-menu li {
     display: block;
-    font-size: 1.1 ;
+    font-size: 1rem ;
 }

@@ -52,6 +52,7 @@
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    text-decoration: none; 
     font-size: 2rem;
 }
 
@@ -64,6 +65,7 @@ nav {
     margin: auto;
     padding: 2rem;
     flex-wrap: wrap;
+    color: #ffffff;
 }
 
 li{
@@ -77,4 +79,55 @@ li{
     #logo{
         padding: 1.5rem;
     }
+}
+/* menu */
+.liste-items{
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.items {
+    cursor: pointer;
+    margin: 0 20px;
+    flex-shrink: 0;
+}
+.items-sous-liste {
+    list-style: none;
+}    
+
+.main-head .items {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.main-head .items a {
+    display: block;
+    padding: 7px;
+}
+
+
+.main-head .items:hover .sub-menu {
+    display: block;
+    
+
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #0a2b19;
+    width: 100px;
+    text-align: center;
+}
+
+.sub-menu li {
+    display: block;
+    font-size: 1rem ;
 }

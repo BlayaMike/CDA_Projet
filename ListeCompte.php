@@ -10,14 +10,47 @@
 </head>
 <body>
 <header class="main-head"> 
-    <nav> 
-        <label id="logo">| THE-BANK $ |</label>
-        <ul id="nav_ul">
-            <li>Accueil</li>
-            <li>menu</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+<nav> 
+
+<h1 id="logo"><a href = "Accueil.php">| THE-BANK $ |</a>
+
+</h1>
+
+<ul class="liste-items">
+          
+<li class="items">    
+    <a href = "Accueil.php">Accueil</a>
+</li>
+          
+<li class="items">
+    Menu
+<span>&#9660;</span>
+
+<ul class="sub-menu">
+   
+
+<li class="items-sous-liste">
+    <a href="recherchecompte.php">Recherche Compte</a> 
+</li>
+  
+
+<li class="items-sous-liste">
+    <a href="rechercheclient.php">Recherche Client</a> 
+</li>
+ 
+
+<li class="items-sous-liste">
+    <a href="ListeCompte.php">Voir Liste des comptes</a> 
+</li>
+
+</ul>          
+
+<li class="items">
+    <a href="......php">Contact</a>
+</li>
+    
+</ul>    
+  </nav> 
 </header>
     <div>
         <div>
