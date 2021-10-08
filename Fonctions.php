@@ -278,8 +278,36 @@ function AfficherUnClient($choix){
 
 }
 
+<<<<<<< HEAD
 
 /*
+=======
+function AfficherListeCompte($id_Agence,$id_Cli){
+
+        $filename=fopen(FILE_COMPTE,"r");
+        $filename2=fopen(FILE_CLIENT,"r");
+
+        while(!feof($filename)){
+                $comptes[]= fgetcsv($filename,1024,",");
+        }
+        while(!feof($filename2)){
+                $clients[]= fgetcsv($filename2,1024,",");
+        }
+
+        fclose($filename);
+        fclose($filename2);
+        foreach($comptes as $val){
+                foreach($clients as $cli){
+                        if($val != null || $cli != null){
+                                if($val[0]==$cli[0] && $val[1]==$id_Cli){
+                                        print_r($val);
+                                }
+                        }
+                }  
+        }
+}
+
+>>>>>>> 0eff830c36e69704dd44529a4a9ee20d076cf864
 echo (  "Veuillez saisir :
                 1 : Pour Ajouter une agence :
                 2 : Pour Ajouter un client :
@@ -324,9 +352,11 @@ switch ($choixmenu) {
                         fputcsv($fp,$compte,",");
                 }
                 fclose($fp);
+                break;
 
         case '4' :
                 AfficherCompte();
+                break;
         case '5' :
                 $choix = readline("Comment souhaitez vous rechercher votre client : 
                         1 : Avec son Nom ;
@@ -334,6 +364,16 @@ switch ($choixmenu) {
                         3 : Avec son Identifiant Client ;
                                                 ");
                 AfficherUnClient($choix);
+                
+                break;
+        case '7' :
+
+                $id_Agence = readline("id Agence : ");
+                $id_Cli= readline("id cli : ");
+                AfficherListeCompte($id_Agence,$id_Cli);
+
+                break;
+
 
         case '6' :
                 break;
