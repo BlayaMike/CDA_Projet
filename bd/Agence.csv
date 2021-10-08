@@ -1,5 +1,4 @@
 CODE_AGENCE,NOM_AGENCE,ADRESSE_AGENCE
-10,10,10
-1,CA,"1 RUE azertyuiop"
-62,ARRAS,"10 rue des paquerettes"
-80,Amiens,"1 rue top"
+1,CA,"1 rue des paquerettes"
+2,CM,"2 rue des paquerettes"
+3,CU,"3 rue des paquerettes"

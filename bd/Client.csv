@@ -1,3 +1,4 @@
 CODE_AGENCE,ID_CLI,NOM_CLI,PRENOM_CLI,DATE_DE_NAISSANCE,EMAIL
-10,1,10,10,10,10
-1,1,Blaya,Mike,20/10/1995,blaya@gmail.com
+1,1,Blaya,Mike,20/10/95,Blaya@gmail.com
+1,2,Cristin,Adol,10/02/02,Adol@gmail.com
+2,1,Le_Goff,Christophe,10/02/02,legoff@gmail.com

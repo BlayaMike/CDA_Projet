@@ -2,17 +2,6 @@
 
 require("constants.php");
 
-$idClient=0;
-$nomClient="";
-$prénomClient="";
-$dateNaissance="";
-$email="";
-$NumCompte="";
-$typeCompte="";
-$CodeAgence=0;
-$NomAgence="";
-$AdressAgence="";
-
 $fichierAgence = FILE_AGENCE;
 $fichierClient = FILE_CLIENT;
 $fichierCompte = FILE_COMPTE;
@@ -174,6 +163,7 @@ function AjouterUnCompteClient($agences,$clients,$comptes){
         return $comptes;
         
 }
+/*
 function AfficherAgence(){
 
         $fichierAgence = FILE_AGENCE;
@@ -202,18 +192,102 @@ function AfficherAgence(){
                 unset($val);
         }
 }
+*/
+
+function AfficherCompte(){
+
+        $fichierCompte= FILE_COMPTE;
+
+        $fp=fopen($fichierCompte, "r");
+
+        while(!feof($fp)){
+                $comptes [] = fgetcsv($fp,1024,",");
+        }
+        
+        fclose($fp);
+        
+        while(1){
+                $x = readline("Numéro de compte rechercher ");
+                foreach($comptes as $val){
+                        foreach ($val as $val2) {
+                                if($val2[2]==$x){
+                                        print_r($val2);
+                                        break 3;
+                                }
+                        }
+                unset($val,$val2);
+                }
+        }
+}
+
+function AfficherUnClient($choix){
+      
+        $fichierClient = FILE_CLIENT;
+        $fichierCompte = FILE_COMPTE;
+
+        $fp=fopen($fichierClient,"r");
+        $fp2=fopen($fichierCompte,"r");
+
+        while(!feof($fp)){
+                $clients[]= fgetcsv($fp,1024,",");
+        }
+        while(!feof($fp2)){
+                $comptes[]= fgetcsv($fp2,1024,",");
+        }
+        
+        fclose($fp2);
+        fclose($fp);
+
+        switch ($choix) {
+                case '1':
+                        $nom = readline("Quel est le nom du client rechercher : ");
+                        foreach($clients as $cli){
+                                if($cli!=null){
+                                        if($cli[2]==$nom){
+                                                print_r($cli);
+                                        }
+                                }
+                        }
+                        break;
+                case '2':
+                        $numerodecompte = readline("Quel est le numéro de compte du client rechercher : ");
 
 
+                        foreach($clients as $cli){ 
+                                foreach ($comptes as $val) {
+                                        if($cli != null && $val != null){
+                                                if($val[2]==$numerodecompte && $val[1]==$cli[1] && $val[0]==$cli[0]){
+                                                        print_r($cli);
+                                                }
+                                        }
+                                }
+                        }
+                        break;
+                case '3':
+                        $id = readline("Quel est l'Identifiant du client rechercher : ");
+                        foreach($clients as $cli){
+                                if($cli[1]==$id){
+                                        print_r($cli);
+                                }
+                        }
+                        break;
+                default:
+                        echo("Erreur");
+                        break;
+        }
+
+}
 
 echo (  "Veuillez saisir :
-                1 : Pour Ajouter une agence ;
-                2 : Pour Ajouter un client ;
-                3 : Pour Ajouter un compte ;
-                4 : Afficher une agence ;
-                8 : Pour ne rien faire ;
+                1 : Pour Ajouter une agence :
+                2 : Pour Ajouter un client :
+                3 : Pour Ajouter un compte :
+                4 : Rechercher un compte : 
+                5 : Recherche d'un client :
+                6 : Afficher la liste des comptes d'un client :
+                7 : Imprimer les infos d'un client :
+                8 : Quitter le programme : 
 ");
-
-
 
 $choixmenu=readline("Que souhaitez-vous faire : ");
 
@@ -249,7 +323,15 @@ switch ($choixmenu) {
                 fclose($fp);
 
         case '4' :
-                AfficherAgence();
+                AfficherCompte();
+        case '5' :
+                $choix = readline("Comment souhaitez vous rechercher votre client : 
+                        1 : Avec son Nom ;
+                        2 : Avec son Numéro de compte ;
+                        3 : Avec son Identifiant Client ;
+                                                ");
+                AfficherUnClient($choix);
+
         default :
                 break;
 }
