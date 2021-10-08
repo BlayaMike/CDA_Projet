@@ -212,11 +212,70 @@ function AfficherCompte(){
                         foreach ($val as $val2) {
                                 if($val2[2]==$x){
                                         print_r($val2);
+                                        break 3;
                                 }
                         }
                 unset($val,$val2);
                 }
         }
+}
+
+function AfficherUnClient($choix){
+      
+        $fichierClient = FILE_CLIENT;
+        $fichierCompte = FILE_COMPTE;
+
+        $fp=fopen($fichierClient,"r");
+        $fp2=fopen($fichierCompte,"r");
+
+        while(!feof($fp)){
+                $clients[]= fgetcsv($fp,1024,",");
+        }
+        while(!feof($fp2)){
+                $comptes[]= fgetcsv($fp2,1024,",");
+        }
+        
+        fclose($fp2);
+        fclose($fp);
+
+        switch ($choix) {
+                case '1':
+                        $nom = readline("Quel est le nom du client rechercher : ");
+                        foreach($clients as $cli){
+                                if($cli!=null){
+                                        if($cli[2]==$nom){
+                                                print_r($cli);
+                                        }
+                                }
+                        }
+                        break;
+                case '2':
+                        $numerodecompte = readline("Quel est le numéro de compte du client rechercher : ");
+
+
+                        foreach($clients as $cli){ 
+                                foreach ($comptes as $val) {
+                                        if($cli != null && $val != null){
+                                                if($val[2]==$numerodecompte && $val[1]==$cli[1] && $val[0]==$cli[0]){
+                                                        print_r($cli);
+                                                }
+                                        }
+                                }
+                        }
+                        break;
+                case '3':
+                        $id = readline("Quel est l'Identifiant du client rechercher : ");
+                        foreach($clients as $cli){
+                                if($cli[1]==$id){
+                                        print_r($cli);
+                                }
+                        }
+                        break;
+                default:
+                        echo("Erreur");
+                        break;
+        }
+
 }
 
 echo (  "Veuillez saisir :
@@ -266,6 +325,12 @@ switch ($choixmenu) {
         case '4' :
                 AfficherCompte();
         case '5' :
+                $choix = readline("Comment souhaitez vous rechercher votre client : 
+                        1 : Avec son Nom ;
+                        2 : Avec son Numéro de compte ;
+                        3 : Avec son Identifiant Client ;
+                                                ");
+                AfficherUnClient($choix);
 
         default :
                 break;
