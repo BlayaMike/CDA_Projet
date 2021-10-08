@@ -278,6 +278,8 @@ function AfficherUnClient($choix){
 
 }
 
+
+/*
 echo (  "Veuillez saisir :
                 1 : Pour Ajouter une agence :
                 2 : Pour Ajouter un client :
@@ -288,6 +290,7 @@ echo (  "Veuillez saisir :
                 7 : Imprimer les infos d'un client :
                 8 : Quitter le programme : 
 ");
+
 
 $choixmenu=readline("Que souhaitez-vous faire : ");
 
@@ -332,8 +335,11 @@ switch ($choixmenu) {
                                                 ");
                 AfficherUnClient($choix);
 
-        default :
+        case '6' :
                 break;
-}
+        case '7' :
+                break;
 
+}
+*/
 ?>
