@@ -278,6 +278,10 @@ function AfficherUnClient($choix){
 
 }
 
+<<<<<<< HEAD
+
+/*
+=======
 function AfficherListeCompte($id_Agence,$id_Cli){
 
         $filename=fopen(FILE_COMPTE,"r");
@@ -296,6 +300,7 @@ function AfficherListeCompte($id_Agence,$id_Cli){
         }
 }
 
+>>>>>>> 0eff830c36e69704dd44529a4a9ee20d076cf864
 echo (  "Veuillez saisir :
                 1 : Pour Ajouter une agence :
                 2 : Pour Ajouter un client :
@@ -306,6 +311,7 @@ echo (  "Veuillez saisir :
                 7 : Imprimer les infos d'un client :
                 8 : Quitter le programme : 
 ");
+
 
 $choixmenu=readline("Que souhaitez-vous faire : ");
 
@@ -362,8 +368,11 @@ switch ($choixmenu) {
                 break;
 
 
-        default :
+        case '6' :
                 break;
-}
+        case '7' :
+                break;
 
+}
+*/
 ?>
