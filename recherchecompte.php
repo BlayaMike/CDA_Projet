@@ -71,24 +71,35 @@
   </nav>
 
 </header>
-
 <main>
     
   <section id="recherche agence" >
   <section class="hero">
-  
-    
-    <h1>Rechercher un Compte </h1>
-    <input type="text" placeholder="N° de compte..." id="Code_Agence">
-    <input type="button" id="button" value="Envoyer" /> 
-  
+  <div id="form1">
+    <form  method=post >
+      <h1>Rechercher un Compte </h1>
+      <input type="text" placeholder="N° de compte..." id="Numero_Compte">
+      <input type="submit" id="button1" value="Envoyer" /> 
+    </form>    
+  </div>  
+  <div id="form2" hidden>
+    <form  method=post >
+      <h1>Rechercher un Compte </h1>
+      <input type="text" placeholder="Code de l'agence..." id="Code Agence">
+      <input type="submit" id="button2" value="Envoyer" /> 
+    </form>
+  </div>
+  <div id="form3" hidden>
+    <form  method=post >
+      <h1>Rechercher un Compte </h1>
+      <input type="text" placeholder="ID du client..." id="id_Cli">
+      <input type="submit" id="button3" value="Envoyer" /> 
+    </form>
+  </div>
 </section>     
-</main> 
-<script src="index.js">
+</main>
+<script src="index_compte.js">
 
 
-</script>          
-
+</script>
 </html>     
-    
-     

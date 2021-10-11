@@ -6,3 +6,4 @@ CODE_AGENCE,ID_CLI,ID_COMPTE,TYPE_COMPTE,SOLDE
 1,2,2,Compte_Courant,0
 2,1,1,Compte_Courant,0
 1,2,3,PEL,0
+4,1,1,"Livret A",0

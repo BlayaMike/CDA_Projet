@@ -97,8 +97,6 @@ function AjouterUnClient(){ //2
         
         $y=-1;
 
-        print_r($clients);
-
         foreach($clients as $val){
                 if($val!=null){
                         if($val[0]==$x){
@@ -166,7 +164,7 @@ function AjouterUnCompteClient(){ //3
                 $y=readline("Code Client : ");
                 foreach($clients as $val){
                         if($val!=null){
-                                if($y==$val[0] && $x==$val[1]){
+                                if($y==$val[1] && $x==$val[0]){
                                         break 2;
                                 }
                         }
@@ -238,7 +236,7 @@ function AfficherAgence(){
 }
 */
 
-function AfficherCompte(){ //4
+function AfficherCompte($numerodecompte){ //4
 
         $fichierClient = FILE_CLIENT;
         $fichierCompte = FILE_COMPTE;
@@ -257,9 +255,8 @@ function AfficherCompte(){ //4
         fclose($fp);
         $x = readline("Numéro de l'agence recherchée ");
         $y = readline("Numéro du client possedant le compte recherché ");
-        $z = readline("Numéro de compte recherché ");
         foreach($comptes as $val){
-                if($val[0]==$x && $val[1]==$y && $val[2]==$z){
+                if($val[0]==$x && $val[1]==$y && $val[2]==$numerodecompte){
                         print_r($val);
                         break;
                 }
@@ -342,7 +339,7 @@ function AfficherListeCompte($id_Agence,$id_Cli){
                 }
         }
 }
-
+/*
 echo (  "Veuillez saisir :
                 1 : Pour Ajouter une agence :
                 2 : Pour Ajouter un client :
@@ -401,19 +398,15 @@ switch ($choixmenu) {
                 AfficherUnClient($choix);
                 
                 break;
-        case '7' :
-
+        case '6' :
+                
                 $id_Agence = readline("id Agence : ");
                 $id_Cli= readline("id cli : ");
                 AfficherListeCompte($id_Agence,$id_Cli);
 
                 break;
-
-
-        case '6' :
-                break;
         case '7' :
                 break;
 
-}
+}*/
 ?>
