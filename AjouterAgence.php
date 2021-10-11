@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
-    <title>CDA Projet | Accueil</title>
+    <title>CDA Projet | Ajouter Agence</title>
   </head>
 <body>
 <header class="main-head"> 
@@ -52,12 +52,20 @@
 <a href="Ajoutercompte.php">Ajouter un Compte</a>  
 </li>
 
+<li class="items-sous-liste">
+<a href="Afficherliste.php">Afficher liste des comptes</a>  
+</li>
+
+<li class="items-sous-liste">
+<a href="imprimer.php">imprimer les infos client</a>  
+</li>
+
 
 </ul>          
 
 
 <li class="items">
-    <a href="......php">Contact</a>
+    <a href="Contact.php">Contact</a>
 </li>
     
 </ul>    
@@ -66,7 +74,7 @@
 </header>
 <main>
     
-  <section id="recherche client" >
+  <section id="Ajouter une agence" >
   <section class="hero">
   
      
@@ -74,7 +82,7 @@
     <input type="text" placeholder="Nom..." id="Nom_Agence">
     <input type="text" placeholder="Code..." id="Code_Agence" />
     <input type="text" placeholder="Adresse..." id="Adresse_Agence" />
-    <input type="button" id="button" value="Envoyer" /> 
+    <input type="button" id="button" value="Envoyer"/> 
   
 </section>     
 </main>      

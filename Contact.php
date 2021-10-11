@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
-    <title>CDA Projet | Ajouter un compte bancaire</title>
+    <title>CDA Projet | Contact</title>
   </head>
 <body>
 <header class="main-head"> 
@@ -39,8 +39,9 @@
  
 
 <li class="items-sous-liste">
-<a href="AjouterAgence.php">Ajouter une Agence</a>  
+    <a href="AjouterAgence.php">Ajouter une Agence</a> 
 </li>
+
 
 <li class="items-sous-liste">
 <a href="Ajouterclient.php">Ajouter un client</a>  
@@ -69,20 +70,16 @@
 </ul>    
   </nav>
 
-</header>
+  </header>
 <main>
     
-  <section id="ajouter un compte bancaire" >
+  <section id="Contact" >
   <section class="hero">
   
-    
-    <h1>Ajouter un compte bancaire </h1>
-    <input type="text" placeholder="Code agence..." id="Code_Agence"/>
-    <input type="text" placeholder="Identifiant..." id="Identifiant_client" />
-    <input type="text" placeholder="Identifiant Compte..." id="Identifiant_Compte" />
-    <input type="text" placeholder="Type de compte..." id="Type_compte" />
-    <input type="text" placeholder="Solde..." id="Solde_client" />
-    <input type="button" id="button" value="Envoyer" /> 
+     
+    <h4>Un probleme ? contacter votre superieur : </h4>
+     <h2>tel : 0102030405</h2>
+     <h2>Email : superieur@gmail.com</h2>
   
 </section>     
 </main> 
@@ -91,6 +88,4 @@
 
 </script>          
 
-</html>     
-    
-     
+</html>       

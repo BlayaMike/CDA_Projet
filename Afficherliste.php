@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
-    <title>CDA Projet | Ajouter un compte bancaire</title>
+    <title>CDA Projet | Afficher liste des comptes </title>
   </head>
 <body>
 <header class="main-head"> 
   
-<nav> 
+  <nav> 
 
-<h1 id="logo"><a href = "Accueil.php">| THE-BANK $ |</a></h1>
+  <h1 id="logo"><a href = "Accueil.php">| THE-BANK $ |</a></h1>
 
 <ul class="liste-items">
           
@@ -27,7 +27,6 @@
 
 <ul class="sub-menu">
    
-
 <li class="items-sous-liste">
     <a href="recherchecompte.php">Recherche Compte</a> 
 </li>
@@ -39,13 +38,12 @@
  
 
 <li class="items-sous-liste">
-<a href="AjouterAgence.php">Ajouter une Agence</a>  
+<a href="AjouterAgence.php">Ajouter une Agence</a> 
 </li>
 
 <li class="items-sous-liste">
 <a href="Ajouterclient.php">Ajouter un client</a>  
 </li>
-
 
 <li class="items-sous-liste">
 <a href="Ajoutercompte.php">Ajouter un Compte</a>  
@@ -61,7 +59,6 @@
 
 </ul>          
 
-
 <li class="items">
     <a href="Contact.php">Contact</a>
 </li>
@@ -70,20 +67,17 @@
   </nav>
 
 </header>
+
 <main>
     
-  <section id="ajouter un compte bancaire" >
+  <section id="Afficher liste" >
   <section class="hero">
   
-    
-    <h1>Ajouter un compte bancaire </h1>
-    <input type="text" placeholder="Code agence..." id="Code_Agence"/>
-    <input type="text" placeholder="Identifiant..." id="Identifiant_client" />
-    <input type="text" placeholder="Identifiant Compte..." id="Identifiant_Compte" />
-    <input type="text" placeholder="Type de compte..." id="Type_compte" />
-    <input type="text" placeholder="Solde..." id="Solde_client" />
+     
+    <h1>Afficher la liste des comptes d'un client </h1>
+    <input type="text" placeholder="ID..." id="_" />
     <input type="button" id="button" value="Envoyer" /> 
-  
+
 </section>     
 </main> 
 <script src="index.js">
@@ -94,3 +88,4 @@
 </html>     
     
      
+

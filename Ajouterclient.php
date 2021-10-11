@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
-    <title>CDA Projet | Accueil</title>
+    <title>CDA Projet | Ajouter client</title>
   </head>
 <body>
 <header class="main-head"> 
@@ -51,11 +51,19 @@
 <a href="Ajoutercompte.php">Ajouter un Compte</a>  
 </li>
 
+<li class="items-sous-liste">
+<a href="Afficherliste.php">Afficher liste des comptes</a>  
+</li>
+
+<li class="items-sous-liste">
+<a href="imprimer.php">imprimer les infos client</a>  
+</li>
+
 </ul>          
 
 
 <li class="items">
-    <a href="......php">Contact</a>
+    <a href="Contact.php">Contact</a>
 </li>
     
 </ul>    
@@ -64,7 +72,7 @@
 </header>
 <main>
     
-  <section id="recherche client" >
+  <section id="Ajouter client" >
   <section class="hero">
   
      

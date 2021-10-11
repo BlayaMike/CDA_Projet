@@ -51,12 +51,20 @@
 <a href="Ajoutercompte.php">Ajouter un Compte</a>  
 </li>
 
+<li class="items-sous-liste">
+<a href="Afficherliste.php">Afficher liste des comptes</a>  
+</li>
+
+<li class="items-sous-liste">
+<a href="imprimer.php">imprimer les infos client</a>  
+</li>
+
 
 </ul>          
 
 
 <li class="items">
-    <a href="......php">Contact</a>
+    <a href="Contact.php">Contact</a>
 </li>
     
 </ul>    
