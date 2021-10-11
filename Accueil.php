@@ -77,13 +77,6 @@
   </form> 
 </section>     
 </main> 
-<script src="index.js">
-
-
-</script>
-<?php
-
-?>
 
 </html>     
     

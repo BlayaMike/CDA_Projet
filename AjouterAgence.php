@@ -77,11 +77,7 @@
     <input type="button" id="button" value="Envoyer" /> 
   
 </section>     
-</main> 
-<script src="index.js">
-
-
-</script>          
+</main>      
 
 </html>     
     
