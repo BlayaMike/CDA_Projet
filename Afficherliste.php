@@ -76,11 +76,11 @@
      
     <h1>Afficher la liste des comptes d'un client </h1>
     <input type="text" placeholder="ID..." id="_" />
-    <input type="button" id="button" value="Envoyer" /> 
+    <input type="button" id="btn-envoi" value="Envoyer" /> 
 
 </section>     
 </main> 
-<script src="index.js">
+<script src="test.js">
 
 
 </script>          

@@ -96,6 +96,10 @@ button {
     align-items: center;
 }
 
+button:hover {
+    background: #186A3B; 
+}
+
 @media screen and (max-width: 885px){
     nav{
         text-align: center;
@@ -112,9 +116,15 @@ button {
     margin: 0 20px;
     flex-shrink: 0;
 }
+.items:hover{
+    background: #186A3B;
+}
 .items-sous-liste {
     list-style: none;
-}    
+} 
+.items-sous-liste:hover{
+    background: #186A3B;
+}   
 
 .main-head .items {
     display: inline-block;
