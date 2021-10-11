@@ -52,11 +52,19 @@
 <a href="Ajoutercompte.php">Ajouter un Compte</a>  
 </li>
 
+<li class="items-sous-liste">
+<a href="Afficherliste.php">Afficher liste des comptes</a>  
+</li>
+
+<li class="items-sous-liste">
+<a href="imprimer.php">imprimer les infos client</a>  
+</li>
+
 </ul>          
 
 
 <li class="items">
-    <a href="......php">Contact</a>
+    <a href="Contact.php">Contact</a>
 </li>
     
 </ul>    
@@ -66,26 +74,46 @@
 
 <main>
     
-  <section class="hero">
+<section class="hero">
   
-  <form method=post>   
-    <button type="submit" formaction="recherchecompte.php">Rechercher un Compte</button>
-    <button type="submit" formaction="rechercheclient.php">Rechercher un Client</button>
-    <button type="submit" formaction="AjouterAgence.php">Ajouter une Agence</button>
-    <button type="submit" formaction="Ajouterclient.php">Ajouter un Client</button>
-    <button type="submit" formaction="ajoutercompte.php">Ajouter un Compte</button>
-  </form> 
+ <form id="form" method=post>
+         
+   <div class="flex"> 
+    <div id="colonne1">
+    <div><button type="submit" formaction="recherchecompte.php">Rechercher un Compte</button><br></div> 
+    <div><button type="submit" formaction="rechercheclient.php">Rechercher un Client</button><br></div> 
+    <div><button type="submit" formaction="AjouterAgence.php">Ajouter une Agence</button><br></div> 
+
+    </div> 
+    <div id="colonne2">
+
+    <div><button type="submit" formaction="Ajouterclient.php">Ajouter un Client</button><br></div> 
+    <div><button type="submit" formaction="ajoutercompte.php">Ajouter un Compte</button><br></div> 
+    <div><button type="submit" formaction="Afficherliste.php">Afficher listes des comptes</button><br></div> 
+
+    </div> 
+    
+ </form>
+     
+    
+<form>
+   </div><div  id="3">
+   <div><button type="submit" formaction="imprimer.php">Imprimer les infos clients</button><br></div>      
+</form>
+
 </section>     
 </main> 
 <script src="index.js">
 
 
-</script>
-<?php
-
-?>
+</script>        
 
 </html>     
     
      
 
+
+    
+    
+    
+    

@@ -49,11 +49,20 @@
 <a href="Ajoutercompte.php">Ajouter un Compte</a>  
 </li>
 
+<li class="items-sous-liste">
+<a href="Afficherliste.php">Afficher liste des comptes</a>  
+</li>
+
+<li class="items-sous-liste">
+<a href="imprimer.php">imprimer les infos client</a>  
+</li>
+
+
 </ul>          
 
 
 <li class="items">
-    <a href="....php">Contact</a>
+    <a href="Contact.php">Contact</a>
 </li>
     
 </ul>    
@@ -68,9 +77,9 @@
   
      
     <h1>Rechercher un client </h1>
-    <input type="text" placeholder="Nom..." id="Nom_Client"><br>
-    <input type="text" placeholder="Numero de compte..." id="Numero de compte_Client" /><br>
-    <input type="text" placeholder="ID..." id="_" /><br>
+    <input type="text" placeholder="Nom..." id="Nom_Client">
+    <input type="text" placeholder="Numero de compte..." id="Numero de compte_Client" />
+    <input type="text" placeholder="ID..." id="_" />
     <input type="button" id="button" value="Envoyer" /> 
 
 </section>     
