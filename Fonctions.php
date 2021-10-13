@@ -14,6 +14,16 @@ $choixmenu=0;
 
 $data="";
 
+function generateRandomString($length = 2) {
+        $characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
+    }
+
 function AjouterUneAgence(){ //1
 
         $fichierAgence = FILE_AGENCE;
@@ -43,7 +53,18 @@ function AjouterUneAgence(){ //1
                 $y=0;
         }
 
-        $bdagence[] = ++$y;
+        $code=000;
+        foreach ($agences as $val) {
+                if($val!=null){
+                        $code =rand(000,999);
+                        if($code==$val[0]){   
+                                $code =rand(000,999);
+                        }
+                }
+        }
+        unset($val);
+
+        $bdagence[] = $code;
         $NomAgence = readline("Nom Agence : ");
         $AdressAgence = readline("Adress Agence : ");
 
@@ -107,10 +128,22 @@ function AjouterUnClient(){ //2
         if($y==-1){
                 $y=0;
         }
+        
         unset($val);
-
+        $id=generateRandomString();
+        
+        $code=0;
+        foreach ($agences as $val) {
+                if($val!=null){
+                        $code =rand(100000,999999);
+                        if($code==$val[0]){   
+                                $code =rand(100000,999999);
+                        }
+                }
+        }
+        unset($val);
         $clients[$countc][$i]=$x; //code agence
-        $clients[$countc][++$i]=$y+1; //code client
+        $clients[$countc][++$i]=$id."".$code; //code client
         $clients[$countc][++$i]=readline("Nom du client: ");
         $clients[$countc][++$i]=readline("Prénom du client: ");
         $clients[$countc][++$i]=readline("Date de naissance du client: ");
@@ -194,18 +227,27 @@ function AjouterUnCompteClient(){ //3
         }
 
         unset($val);
-
+        $code=0;
+        foreach ($agences as $val) {
+                if($val!=null){
+                        $code =rand(10000000000,99999999999);
+                        if($code==$val[0]){   
+                                $code =rand(10000000000,99999999999);
+                        }
+                }
+        }
+        unset($val);
         $comptes[$countc][$i]=$x; //code agence
         $comptes[$countc][++$i]=$y; //code client
-        $comptes[$countc][++$i]=$z+1; //code compte
-        $comptes[$countc][++$i]=readline("Type de comte : ");
+        $comptes[$countc][++$i]=$code; //code compte
+        $comptes[$countc][++$i]=readline("Type de compte : ");
         $comptes[$countc][++$i]=readline("Solde : ");
 
 
         return $comptes;
         
 }
-/*
+
 function AfficherAgence(){
 
         $fichierAgence = FILE_AGENCE;
@@ -234,7 +276,7 @@ function AfficherAgence(){
                 unset($val);
         }
 }
-*/
+
 
 function AfficherCompte(){ //4
 
@@ -292,6 +334,7 @@ function AfficherUnClient($choix){ //5
                                         }
                                 }
                         }
+                        unset($cli);
                         break;
                 case '2':
                         $numerodecompte = readline("Quel est le numéro de compte du client rechercher : ");
@@ -306,6 +349,7 @@ function AfficherUnClient($choix){ //5
                                         }
                                 }
                         }
+                        unset($cli,$val);
                         break;
                 case '3':
                         $id = readline("Quel est l'Identifiant du client rechercher : ");
@@ -314,6 +358,7 @@ function AfficherUnClient($choix){ //5
                                         print_r($cli);
                                 }
                         }
+                        unset($cli);
                         break;
                 default:
                         echo("Erreur");
@@ -338,25 +383,26 @@ function AfficherListeCompte($id_Agence,$id_Cli){
                         }
                 }
         }
+        unset($val);
 }
 
-echo (  "Veuillez saisir :
-                1 : Pour Ajouter une agence :
-                2 : Pour Ajouter un client :
-                3 : Pour Ajouter un compte :
-                4 : Rechercher un compte : 
-                5 : Recherche d'un client :
-                6 : Afficher la liste des comptes d'un client :
-                7 : Imprimer les infos d'un client :
-                8 : Quitter le programme : 
-");
-
-
-$choixmenu=readline("Que souhaitez-vous faire : ");
 while(1){
+        echo (  "Veuillez saisir :
+                        1 : Pour Ajouter une agence :
+                        2 : Pour Ajouter un client :
+                        3 : Pour Ajouter un compte :
+                        4 : Rechercher un compte : 
+                        5 : Recherche d'un client :
+                        6 : Afficher la liste des comptes d'un client :
+                        7 : Imprimer les infos d'un client :
+                        8 : Quitter le programme : 
+        ");
+        
+        
+        $choixmenu=readline("Que souhaitez-vous faire : ");
         switch ($choixmenu) {
                 case '8':
-                        echo("Vous n'avez rien fait");
+                        echo("Aurevoir");
                         exit;
                 case '1':
                         $agences=AjouterUneAgence();
@@ -374,6 +420,7 @@ while(1){
                         foreach($clients as $cli){
                                 fputcsv($fp,$cli,",");
                         }
+                        unset($cli);
                         fclose($fp);
                         break;
                 case '3':
@@ -383,6 +430,7 @@ while(1){
                         foreach($comptes as $compte){
                                 fputcsv($fp,$compte,",");
                         }
+                        unset($compte);
                         fclose($fp);
                         break;
         
