@@ -55,7 +55,7 @@
 <body>
 <main>
 <section>
-    <h4>Type de Compte <b>Livret A </b></h4>
+    <h4>Type de Compte <b></b></h4>
     <hr/><hr> 
     <p>Nom :</p>
     <p>Prénom :</p>
@@ -63,8 +63,8 @@
     <p>Email :</p>
     <hr/><hr>
     <p>Numero de compte :</p>
-    <p>Solde INT :</p>
-    <p>Découvert autorisé TINYINT :</p>
+    <p>Solde :</p>
+    <p>Découvert autorisé :</p>
 </section>
 </main>
 </body>

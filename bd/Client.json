@@ -1,0 +1,34 @@
+[
+    {
+        "CODE_AGENCE":1,
+        "ID_CLI":1,
+        "NOM_CLI":"Blaya",
+        "PRENOM_CLI":"Mike",
+        "DATE_DE_NAISSANCE":"20/10/95",
+        "EMAIL":"Blaya@gmail.com"
+    }
+    {
+        "CODE_AGENCE":1,
+        "ID_CLI":2,
+        "NOM_CLI":"Cristin",
+        "PRENOM_CLI":"Adol",
+        "DATE_DE_NAISSANCE":"10/02/02",
+        "EMAIL":"Adol@gmail.com"
+    }    
+    {
+        "CODE_AGENCE":2,
+        "ID_CLI":1,
+        "NOM_CLI":"Le_Goff",
+        "PRENOM_CLI":"Christophe",
+        "DATE_DE_NAISSANCE":"10/02/02",
+        "EMAIL":"legoff@gmail.com"
+    }
+    {
+        "CODE_AGENCE":4,
+        "ID_CLI":1,
+        "NOM_CLI":"Toto",
+        "PRENOM_CLI":"Toto",
+        "DATE_DE_NAISSANCE":"10/05/78",
+        "EMAIL":"toto@gmail.com"
+    }
+]

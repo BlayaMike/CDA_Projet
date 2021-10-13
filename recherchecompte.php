@@ -75,22 +75,22 @@
     
   <section id="recherche agence" >
   <section class="hero">
-  <div id="form1">
-    <form  method=post >
+  <div id="form1" >
+    <form action="comptestest.php" method="post">
       <h1>Rechercher un Compte </h1>
-      <input type="text" placeholder="N° de compte..." id="Numero_Compte">
-      <input type="submit" id="button1" value="Envoyer" /> 
+      <input type="text" name="Numero_Compte" >
+      <button type="submit" value="ok" >Valider</button>
     </form>    
   </div>  
   <div id="form2" hidden>
-    <form  method=post >
+    <form >
       <h1>Rechercher un Compte </h1>
       <input type="text" placeholder="Code de l'agence..." id="Code Agence">
-      <input type="submit" id="button2" value="Envoyer" /> 
+      <button type="submit" id="button2" value="Envoyer" /> 
     </form>
   </div>
   <div id="form3" hidden>
-    <form  method=post >
+    <form>
       <h1>Rechercher un Compte </h1>
       <input type="text" placeholder="ID du client..." id="id_Cli">
       <input type="submit" id="button3" value="Envoyer" /> 
@@ -102,4 +102,5 @@
 
 
 </script>
+
 </html>     

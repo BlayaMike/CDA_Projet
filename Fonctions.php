@@ -236,7 +236,7 @@ function AfficherAgence(){
 }
 */
 
-function AfficherCompte($numerodecompte){ //4
+function AfficherCompte(){ //4
 
         $fichierClient = FILE_CLIENT;
         $fichierCompte = FILE_COMPTE;
@@ -255,10 +255,10 @@ function AfficherCompte($numerodecompte){ //4
         fclose($fp);
         $x = readline("Numéro de l'agence recherchée ");
         $y = readline("Numéro du client possedant le compte recherché ");
+        $z = readline("Numéro du compte recherché ");
         foreach($comptes as $val){
-                if($val[0]==$x && $val[1]==$y && $val[2]==$numerodecompte){
+                if($val[0]==$x && $val[1]==$y && $val[2]==$z){
                         print_r($val);
-                        break;
                 }
         unset($val);
         }
@@ -339,7 +339,7 @@ function AfficherListeCompte($id_Agence,$id_Cli){
                 }
         }
 }
-/*
+
 echo (  "Veuillez saisir :
                 1 : Pour Ajouter une agence :
                 2 : Pour Ajouter un client :
@@ -353,60 +353,62 @@ echo (  "Veuillez saisir :
 
 
 $choixmenu=readline("Que souhaitez-vous faire : ");
+while(1){
+        switch ($choixmenu) {
+                case '8':
+                        echo("Vous n'avez rien fait");
+                        exit;
+                case '1':
+                        $agences=AjouterUneAgence();
+                        $fp=fopen($fichierAgence,"w+");
+                        foreach($agences as $agence){
+                                fputcsv($fp,$agence,",");
+                        }
+                        unset($agence);
+                        fclose($fp);              
+                        break;
+                case '2':
+                        $clients= AjouterUnClient();
+        
+                        $fp=fopen($fichierClient,"w+");
+                        foreach($clients as $cli){
+                                fputcsv($fp,$cli,",");
+                        }
+                        fclose($fp);
+                        break;
+                case '3':
+                        $comptes = AjouterUnCompteClient();
+                        
+                        $fp=fopen($fichierCompte,"w+");
+                        foreach($comptes as $compte){
+                                fputcsv($fp,$compte,",");
+                        }
+                        fclose($fp);
+                        break;
+        
+                case '4' :
+                        AfficherCompte();
+                        break;
+                case '5' :
+                        $choix = readline("Comment souhaitez vous rechercher votre client : 
+                                1 : Avec son Nom ;
+                                2 : Avec son Numéro de compte ;
+                                3 : Avec son Identifiant Client ;
+                                                        ");
+                        AfficherUnClient($choix);
+                        
+                        break;
+                case '6' :
+                        
+                        $id_Agence = readline("id Agence : ");
+                        $id_Cli= readline("id cli : ");
+                        AfficherListeCompte($id_Agence,$id_Cli);
+        
+                        break;
+                case '7' :
+                        break;
+        
+        }
+}
 
-switch ($choixmenu) {
-        case '8':
-                echo("Vous n'avez rien fait");
-                exit;
-        case '1':
-                $agences=AjouterUneAgence();
-                $fp=fopen($fichierAgence,"w+");
-                foreach($agences as $agence){
-                        fputcsv($fp,$agence,",");
-                }
-                unset($agence);
-                fclose($fp);              
-                break;
-        case '2':
-                $clients= AjouterUnClient();
-
-                $fp=fopen($fichierClient,"w+");
-                foreach($clients as $cli){
-                        fputcsv($fp,$cli,",");
-                }
-                fclose($fp);
-                break;
-        case '3':
-                $comptes = AjouterUnCompteClient();
-                
-                $fp=fopen($fichierCompte,"w+");
-                foreach($comptes as $compte){
-                        fputcsv($fp,$compte,",");
-                }
-                fclose($fp);
-                break;
-
-        case '4' :
-                AfficherCompte();
-                break;
-        case '5' :
-                $choix = readline("Comment souhaitez vous rechercher votre client : 
-                        1 : Avec son Nom ;
-                        2 : Avec son Numéro de compte ;
-                        3 : Avec son Identifiant Client ;
-                                                ");
-                AfficherUnClient($choix);
-                
-                break;
-        case '6' :
-                
-                $id_Agence = readline("id Agence : ");
-                $id_Cli= readline("id cli : ");
-                AfficherListeCompte($id_Agence,$id_Cli);
-
-                break;
-        case '7' :
-                break;
-
-}*/
 ?>

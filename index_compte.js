@@ -1,3 +1,4 @@
+/*
 let Num_Compte = document.getElementById("Numero_Compte");
 let Code_Agence = document.getElementById("Code_Agence");
 let id_Cli = document.getElementById("id_Cli");
@@ -11,28 +12,41 @@ let button1 = document.getElementById("button1");
 let button2 = document.getElementById("button2");
 let button3 = document.getElementById("button3");
 
-button1.addEventListener("click",test,false);
-button2.addEventListener("click",test2,false);
-button3.addEventListener("click",test3,false);
+let num = 0;
 
-/*
-var txtFile = new XMLHttpRequest();
 
-txtFile.open("GET", ".\bd\Compte.csv", true);
-*/
+
+
+
 
 function test(){
-    form1.hidden = true;
-    form2.hidden = false;
+    if(form1.hidden == false ){
+        
+        if(Num_Compte.value==num){
+            button1.addEventListener("click",test,false);
+        }
+
+        form1.hidden = true;
+        form2.hidden = false;
+    }
+    else if(form2 == false){
+        form2.hidden = true;
+        form3.hidden = false;
+        button1.addEventListener("click",test,false);
+    }
+    else {
+        form3.hidden = true;
+        button1.addEventListener("click",test,false);
+    }
 }
 
+test();
+*/
 
-function test2(){
-    form2.hidden = false;
-    form3.hidden = true;
-}
+tab = [];
+
+fetch(".\\bd\\Compte.json")
+    .then(res => res.json())
+    .then(data => console.log(data));
 
 
-function test3(){
-    form3.hidden = true;
-}
