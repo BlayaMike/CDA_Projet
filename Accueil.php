@@ -104,12 +104,16 @@
 </section>     
 </main> 
 <<<<<<< HEAD
+       
+=======
+<<<<<<< HEAD
 =======
 <script src="index.js">
 
 
 </script>        
 >>>>>>> 75f205846e02d037e3a80f58f0bfcf328505f3a4
+>>>>>>> 83306ae88faec2d2a0c03f51f033ef6ee34ffdfe
 
 </html>     
     
