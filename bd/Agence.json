@@ -3,11 +3,26 @@
         "CODE_AGENCE":114,
         "NOM_AGENCE":"CA",
         "ADRESSE_AGENCE":"7 rue des banques"
-    }
+    },
     {
         "CODE_AGENCE":684,
         "NOM_AGENCE":"CM",
         "ADRESSE_AGENCE":"8 rue des banques"
-    }    
-
+    },  
+    {
+        "CODE_AGENCE":678,
+        "NOM_AGENCE":"CZ",
+        "ADRESSE_AGENCE":"46 rue des peupliers"
+    },  
+    {
+        "CODE_AGENCE":472,
+        "NOM_AGENCE":"PO",
+        "ADRESSE_AGENCE":"30 boulevard Frontois"
+    },  
+    {
+        "CODE_AGENCE":523,
+        "NOM_AGENCE":"KP",
+        "ADRESSE_AGENCE":"49 bis rue du temple"
+    }
+    
 ]
