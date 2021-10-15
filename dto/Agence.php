@@ -12,7 +12,7 @@ class Agence {
     }
     public function getCode_Agence(){
         return $this->code;
-    }        
+    }
     public function setCode_Agence(int $code_Agence){
         return $this->code = $code_Agence;
     }

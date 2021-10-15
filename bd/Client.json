@@ -1,19 +1,18 @@
 [
     {
-        "CODE_AGENCE":1,
-        "ID_CLI":1,
+        "CODE_AGENCE":114,
+        "ID_CLI":"NE575677",
         "NOM_CLI":"Blaya",
         "PRENOM_CLI":"Mike",
         "DATE_DE_NAISSANCE":"20/10/95",
-        "EMAIL":"Blaya@gmail.com"
+        "EMAIL":"blaya@gmail.com"
     }
     {
-        "CODE_AGENCE":1,
-        "ID_CLI":2,
-        "NOM_CLI":"Cristin",
-        "PRENOM_CLI":"Adol",
-        "DATE_DE_NAISSANCE":"10/02/02",
-        "EMAIL":"Adol@gmail.com"
-    }    
-
+        "CODE_AGENCE":114,
+        "ID_CLI":"XU894913",
+        "NOM_CLI":"MonsieurA",
+        "PRENOM_CLI":"Jean",
+        "DATE_DE_NAISSANCE":"18/06/84",
+        "EMAIL":"Jean@gmail.com"
+    }
 ]

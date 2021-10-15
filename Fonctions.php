@@ -194,7 +194,7 @@ function AjouterUnCompteClient(){ //3
                 echo("l'agence n'existe pas. veuillez reesayer. \n");
         }
         while(1){
-                $y=readline("Code Client : ");
+                $y=readline("Identifiant Client : ");
                 foreach($clients as $val){
                         if($val!=null){
                                 if($y==$val[1] && $x==$val[0]){
