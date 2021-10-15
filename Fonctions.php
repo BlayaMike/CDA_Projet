@@ -242,6 +242,7 @@ function AjouterUnCompteClient(){ //3
         $comptes[$countc][++$i]=$code; //code compte
         $comptes[$countc][++$i]=readline("Type de compte : ");
         $comptes[$countc][++$i]=readline("Solde : ");
+        $comptes[$countc][++$i]=readline("Decouvert autorisé : ");
 
 
         return $comptes;

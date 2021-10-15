@@ -9,14 +9,5 @@
         "NOM_AGENCE":"CM",
         "ADRESSE_AGENCE":"2 rue des paquerettes"
     }    
-    {
-        "CODE_AGENCE":3,
-        "NOM_AGENCE":"CU",
-        "ADRESSE_AGENCE":"3 rue des paquerettes"
-    }
-    {
-        "CODE_AGENCE":4,
-        "NOM_AGENCE":"Banque Postale",
-        "ADRESSE_AGENCE":"48 rue du Général Barbot"
-    }
+
 ]
