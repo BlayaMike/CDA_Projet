@@ -26,7 +26,7 @@
    
 
 <li class="items-sous-liste">
-    <a href="Compte.php">compte</a> 
+    <a href="Fiche_Compte.php">compte</a> 
 </li>
   
 
