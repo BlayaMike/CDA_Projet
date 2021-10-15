@@ -17,7 +17,7 @@ fclose($fp);
 foreach ($comptes as $val) {
     if($val!=null){
         if($_POST["Numero_Compte"]==$val[2]){
-            require("Compte.php");
+            require("Fiche_Compte.php");
         }
     }
 }

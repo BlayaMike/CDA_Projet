@@ -1,29 +1,29 @@
 [
     {
-    "code_agence":114,
+        "code_agence":114,
 
-    "id_cli":"NE575677",
+        "id_cli":"NE575677",
 
-    "id_compte":12075149338,
+        "id_compte":12075149338,
 
-    "type_compte":"Livret A",
+        "type_compte":"Livret A",
 
-    "solde":500,
+        "solde":500,
 
-    "decouvert_Autorisé":"Oui"
+        "decouvert_Autorisé":"Oui"
     },
     {
-    "code_agence":114,
+        "code_agence":114,
 
-    "id_cli":"NE575677",
+        "id_cli":"NE575677",
 
-    "id_compte":67516630624,
+        "id_compte":67516630624,
 
-    "type_compte":"PEL",
+        "type_compte":"PEL",
 
-    "solde":-500,
-    
-    "decouvert_Autorisé":"Oui"
+        "solde":-500,
+        
+        "decouvert_Autorisé":"Oui"
     
     },    
     {
@@ -39,19 +39,19 @@
         
         "decouvert_Autorisé":"Oui"
         
-        },        
-        {
-            "code_agence":114,
+    },        
+    {
+        "code_agence":114,
+    
+        "id_cli":"XU894913",
+    
+        "id_compte":43977479608,
+    
+        "type_compte":"Livret A",
+    
+        "solde":800,
         
-            "id_cli":"XU894913",
+        "decouvert_Autorisé":"Non"
         
-            "id_compte":43977479608,
-        
-            "type_compte":"Livret A",
-        
-            "solde":800,
-            
-            "decouvert_Autorisé":"Non"
-            
-            }  
+    }  
 ]

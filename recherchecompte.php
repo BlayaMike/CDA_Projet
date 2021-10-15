@@ -76,7 +76,7 @@
   <section id="recherche agence" >
   <section class="hero">
   <div id="form1" >
-    <form action="comptestest.php" method="post">
+    <form action="comptestest.php">
       <h1>Rechercher un Compte </h1>
       <input type="text" name="Numero_Compte" >
       <button type="submit" value="ok" >Valider</button>
