@@ -34,283 +34,129 @@
                     {   "id_compte":22686091328,
                         "type_compte":"PEL",
                         "solde":4,    
-                        "decouvert_Autorisé":"Oui"
-                    },
-                    {   "id_compte":67516630624,
+                        "decouvert_Autorisé":"Non"
+                    }
+                ]
+            }    
+        ]
+    },    
+        
+    {
+        
+        "CODE_AGENCE": 684,
+        "NOM_AGENCE": "CM",
+        "ADRESSE_AGENCE": "8 rue des banques",
+        "Clients":
+        [
+            {   "ID_CLI":"IN153329",
+                "NOM_CLI":"Zil",
+                "PRENOM_CLI":"Fa",
+                "DATE_DE_NAISSANCE":"01/01/02",
+                "EMAIL":"fazil@gmail.com",
+                "COMPTES":[
+                    {   "id_compte":22686091328,
                         "type_compte":"PEL",
-                        "solde":-500,
+                        "solde":4,    
+                        "decouvert_Autorisé":"Non"
+                    },
+                    {   "id_compte":97563855355,
+                        "type_compte":"Livret A",
+                        "solde":800,
+                        "decouvert_Autorisé":"Non"
+                    }, 
+                    {   "id_compte":77161236451,
+                        "type_compte":"Compte Courant",
+                        "solde":50,
                         "decouvert_Autorisé":"Oui"
                     }    
                 ]
-            },    
-
-            {
-                    "ID_CLI":"XU894913",
-                    "NOM_CLI":"MonsieurA",
-                    "PRENOM_CLI":"Jean",
-                    "DATE_DE_NAISSANCE":"18/06/84",
-                    "EMAIL":"Jean@gmail.com"
-
-
-
-                                 {
-                                 "code_agence":684,
-                                    
-                                 "id_cli":"IN153329",
-                                    
-                                 "id_compte":22686091328,
-                                    
-                                 "type_compte":"PEL",
-                                    
-                                 "solde":4,
-                                        
-                                 "decouvert_Autorisé":"Non"
-                                        
-                              },  
-                        
-                              {
-                                    "code_agence":684,
-                                        
-                                    "id_cli":"IN153329",
-                                        
-                                    "id_compte":97563855355,
-                                        
-                                    "type_compte":"Livret A",
-                                        
-                                    "solde":800,
-                                            
-                                    "decouvert_Autorisé":"Non"
-                                            
-                               },   
-                               
-                               {
-                                        "code_agence":684,
-                                                    
-                                        "id_cli":"IN153329",
-                                                    
-                                        "id_compte":77161236451,
-                                                    
-                                        "type_compte":"Compte Courant",
-                                                    
-                                         "solde":50,
-                                                        
-                                         "decouvert_Autorisé":"Oui"
-                                                        
-                                },   
+            } 
+        ]
+    },       
+    {
+        
+        "CODE_AGENCE": 472,
+        "NOM_AGENCE": "PO",
+        "ADRESSE_AGENCE": "30 boulevard Frontois",
+        "Clients":
+        [
+            {   "ID_CLI":"LC307682",
+                "NOM_CLI":"Dalton",
+                "PRENOM_CLI":"David",
+                "DATE_DE_NAISSANCE":"07/12/02",
+                "EMAIL":"dd@gmail.com",
+                "COMPTES":[
+                    {   "id_compte":97157725031,
+                        "type_compte":"PEL",
+                        "solde":8000,    
+                        "decouvert_Autorisé":"Oui"
+                    }
+                ]
+            } 
+        ]
+    }, 
+    {
+        
+        "CODE_AGENCE": 523,
+        "NOM_AGENCE": "KP",
+        "ADRESSE_AGENCE": "49 bis rue du temple",
+        "Clients":
+        [
+            {   "ID_CLI":"EE559402",
+                "NOM_CLI":"de Nazareth",
+                "PRENOM_CLI":"Jesus",
+                "DATE_DE_NAISSANCE":"25/12/01",
+                "EMAIL":"bible@gmail.com",
+                "COMPTES":[
+                    {   "id_compte":85083945486,
+                        "type_compte":"Compte Courant",
+                        "solde":0,    
+                        "decouvert_Autorisé":"Non"
+                    },
+                    {   "id_compte":99110063070,
+                        "type_compte":"Livret A",
+                        "solde":23,    
+                        "decouvert_Autorisé":"Oui"
+                    }
+                ]
             },
-            
-            
-    },
-
-         {
-            "CODE_AGENCE":684,
-            "NOM_AGENCE":"CM",
-            "ADRESSE_AGENCE":"8 rue des banques"
-    
-                        {
-                        "ID_CLI":"IN153329",
-                        "NOM_CLI":"Zil",
-                        "PRENOM_CLI":"Fa",
-                        "DATE_DE_NAISSANCE":"01/01/02",
-                        "EMAIL":"fazil@gmail.com"
-    
-    
-                                 {
-                                     "code_agence":684,
-                                        
-                                     "id_cli":"IN153329",
-                                        
-                                     "id_compte":22686091328,
-                                        
-                                     "type_compte":"PEL",
-                                        
-                                     "solde":4,
-                                            
-                                     "decouvert_Autorisé":"Non"
-                                            
-                                  },  
-                            
-                                  {
-                                        "code_agence":684,
-                                            
-                                        "id_cli":"IN153329",
-                                            
-                                        "id_compte":97563855355,
-                                            
-                                        "type_compte":"Livret A",
-                                            
-                                        "solde":800,
-                                                
-                                        "decouvert_Autorisé":"Non"
-                                                
-                                   },   
-                                   
-                                   {
-                                            "code_agence":684,
-                                                        
-                                            "id_cli":"IN153329",
-                                                        
-                                            "id_compte":77161236451,
-                                                        
-                                            "type_compte":"Compte Courant",
-                                                        
-                                             "solde":50,
-                                                            
-                                             "decouvert_Autorisé":"Oui"
-                                                            
-                                    },   
-                        }
-            
-            
-        }, 
-
-       
-    {
-        "CODE_AGENCE":472,
-        "NOM_AGENCE":"PO",
-        "ADRESSE_AGENCE":"30 boulevard Frontois"
-
-        {
-            "ID_CLI":"LC307682",
-            "NOM_CLI":"Dalton",
-            "PRENOM_CLI":"David",
-            "DATE_DE_NAISSANCE":"07/12/02",
-            "EMAIL":"dd@gmail.com"
-
-
-                             {
-                                "code_agence":472,
-                                            
-                                "id_cli":"LC307682",
-                                            
-                                "id_compte":97157725031,
-                                            
-                                "type_compte":"PEL",
-                                            
-                                 "solde":8000,
-                                                
-                                 "decouvert_Autorisé":"Oui"
-                                                
-                            },   
-        },
-
-
-    },  
-
-
-    {
-        "CODE_AGENCE":523,
-        "NOM_AGENCE":"KP",
-        "ADRESSE_AGENCE":"49 bis rue du temple"
-
-        {
-           
-            "ID_CLI":"EE559402",
-            "NOM_CLI":"de Nazareth",
-            "PRENOM_CLI":"Jesus",
-            "DATE_DE_NAISSANCE":"25/12/01",
-            "EMAIL":"bible@gmail.com"
-
-
-                        {
-           
-                                            
-                                "id_cli":"EE559402",
-                                            
-                                "id_compte":85083945486,
-                                            
-                                "type_compte":"Compte Courant",
-                                            
-                                 "solde":0,
-                                                
-                                 "decouvert_Autorisé":"Non"
-                                                
-                         },   
-                
-                             
-                         {
-           
-                                            
-                                "id_cli":"EE559402",
-                                            
-                                "id_compte":99110063070,
-                                            
-                                "type_compte":"Livret A",
-                                            
-                                 "solde":23,
-                                                
-                                 "decouvert_Autorisé":"Oui"
-                                                
-                          },  
-
-
-        },
-
-
-        {
-          
+            { 
             "ID_CLI":"IV256213",
             "NOM_CLI":"Freg",
             "PRENOM_CLI":"Martin",
             "DATE_DE_NAISSANCE":"02/09/54",
-            "EMAIL":"freg@gmail.com"
-
-
-            {
-                                "code_agence":523,
-                                            
-                                "id_cli":"IV256213",
-                                            
-                                "id_compte":26619119662,
-                                            
-                                "type_compte":"Compte courant",
-                                            
-                                 "solde":500,
-                                                
-                                 "decouvert_Autorisé":"Non"
-                                                
-            },  
-        },
-
-
-
-
-    }
-
-
-    {
-        "CODE_AGENCE":678,
-        "NOM_AGENCE":"CZ",
-        "ADRESSE_AGENCE":"46 rue des peupliers"
-   
-   
-   
-        {
-            "CODE_AGENCE":678,
-            "ID_CLI":"TW711312",
-            "NOM_CLI":"Delporte",
-            "PRENOM_CLI":"Clay",
-            "DATE_DE_NAISSANCE":"14/02/1976",
-            "EMAIL":"delporte@gmail.com"
-
-
-            {
-                                "code_agence":678,
-                                            
-                                "id_cli":"TW711312",
-                                            
-                                "id_compte":22246373433,
-                                            
-                                "type_compte":"Livret A",
-                                            
-                                 "solde":4679,
-                                                
-                                 "decouvert_Autorisé":"Non"
-                                                
-            }       
-
-
-        }
-    }
+            "EMAIL":"freg@gmail.com",
+            "COMPTES":[
+                {   "id_compte":26619119662,
+                    "type_compte":"Compte Courant",
+                    "solde":500,    
+                    "decouvert_Autorisé":"Non"
+                }
+            ]
+            } 
+        ]
+    },                   
         
+    {
+        
+        "CODE_AGENCE": 678,
+        "NOM_AGENCE": "CZ",
+        "ADRESSE_AGENCE": "46 rue des peupliers",
+        "Clients":
+        [
+            {   "ID_CLI":"TW711312",
+                "NOM_CLI":"Delporte",
+                "PRENOM_CLI":"Clay",
+                "DATE_DE_NAISSANCE":"14/02/1976",
+                "EMAIL":"delporte@gmail.com",
+                "COMPTES":[
+                    {   "id_compte":22246373433,
+                        "type_compte":"Livret A",
+                        "solde":4679,    
+                        "decouvert_Autorisé":"Non"
+                    }
+                ]
+            } 
+        ]
+    }                                       
 ]
