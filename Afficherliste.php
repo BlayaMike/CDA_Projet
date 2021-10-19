@@ -2,12 +2,12 @@
 <html lang="fr">
 
    <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
     <title>CDA Projet | Afficher liste des comptes </title>
-  </head>
+    </head>
 <body>
 <header class="main-head"> 
   
@@ -39,25 +39,25 @@
 
 <li class="items-sous-liste">
 <a href="AjouterAgence.php">Ajouter une Agence</a> 
-</li>
+  </li>
 
-<li class="items-sous-liste">
-<a href="Ajouterclient.php">Ajouter un client</a>  
-</li>
+  <li class="items-sous-liste">
+  <a href="Ajouterclient.php">Ajouter un client</a>  
+  </li>
 
-<li class="items-sous-liste">
-<a href="Ajoutercompte.php">Ajouter un Compte</a>  
-</li>
+  <li class="items-sous-liste">
+  <a href="Ajoutercompte.php">Ajouter un Compte</a>  
+  </li>
 
-<li class="items-sous-liste">
-<a href="Afficherliste.php">Afficher liste des comptes</a>  
-</li>
+  <li class="items-sous-liste">
+  <a href="Afficherliste.php">Afficher liste des comptes</a>  
+  </li>
 
-<li class="items-sous-liste">
-<a href="imprimer.php">imprimer les infos client</a>  
-</li>
+  <li class="items-sous-liste">
+  <a href="imprimer.php">imprimer les infos client</a>  
+  </li>
 
-</ul>          
+  </ul>          
 
 <li class="items">
     <a href="Contact.php">Contact</a>
