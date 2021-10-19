@@ -42,139 +42,137 @@
     },        
     {
         "code_agence":114,
-    
+
         "id_cli":"XU894913",
-    
+
         "id_compte":43977479608,
-    
+
         "type_compte":"Livret A",
-    
+
         "solde":800,
-        
+
         "decouvert_Autorisé":"Non"
         
     },  
-
-     
-     {
-         "code_agence":684,
-            
-         "id_cli":"IN153329",
-            
-         "id_compte":22686091328,
-            
-         "type_compte":"PEL",
-            
-         "solde":4,
-                
-         "decouvert_Autorisé":"Non"
-                
-      },  
-
-      {
-            "code_agence":684,
-                
-            "id_cli":"IN153329",
-                
-            "id_compte":97563855355,
-                
-            "type_compte":"Livret A",
-                
-            "solde":800,
-                    
-            "decouvert_Autorisé":"Non"
-                    
-       },   
-       
-       {
-                "code_agence":684,
-                            
-                "id_cli":"IN153329",
-                            
-                "id_compte":77161236451,
-                            
-                "type_compte":"Compte Courant",
-                            
-                 "solde":50,
-                                
-                 "decouvert_Autorisé":"Oui"
-                                
-        },   
-
-             
-        {
-                "code_agence":523,
-                            
-                "id_cli":"EE559402",
-                            
-                "id_compte":85083945486,
-                            
-                "type_compte":"Compte Courant",
-                            
-                 "solde":0,
-                                
-                 "decouvert_Autorisé":"Non"
-                                
-         },   
-
-             
-         {
-                "code_agence":523,
-                            
-                "id_cli":"EE559402",
-                            
-                "id_compte":99110063070,
-                            
-                "type_compte":"Livret A",
-                            
-                 "solde":23,
-                                
-                 "decouvert_Autorisé":"Oui"
-                                
-          },  
-            
-          {
-                "code_agence":523,
-                            
-                "id_cli":"IV256213",
-                            
-                "id_compte":26619119662,
-                            
-                "type_compte":"Compte courant",
-                            
-                 "solde":500,
-                                
-                 "decouvert_Autorisé":"Non"
-                                
-           },  
-             
-           {
-                "code_agence":472,
-                            
-                "id_cli":"LC307682",
-                            
-                "id_compte":97157725031,
-                            
-                "type_compte":"PEL",
-                            
-                 "solde":8000,
-                                
-                 "decouvert_Autorisé":"Oui"
-                                
-            },   
-             
-            {
-                "code_agence":678,
-                            
-                "id_cli":"TW711312",
-                            
-                "id_compte":22246373433,
-                            
-                "type_compte":"Livret A",
-                            
-                 "solde":4679,
-                                
-                 "decouvert_Autorisé":"Non"
-                                
-            }       
+    {
+        "code_agence":684,
+        
+        "id_cli":"IN153329",
+        
+        "id_compte":22686091328,
+        
+        "type_compte":"PEL",
+        
+        "solde":4,
+        
+        "decouvert_Autorisé":"Non"
+    },
+    {   
+        "code_agence":684,
+        
+        "id_cli":"IN153329",
+        
+        "id_compte":97563855355,
+        
+        "type_compte":"Livret A",
+        
+        "solde":800,
+        
+        "decouvert_Autorisé":"Non"
+    
+    },
+    {
+        "code_agence":684,
+        
+        "id_cli":"IN153329",
+        
+        "id_compte":77161236451,
+        
+        "type_compte":"Compte Courant",
+        
+        "solde":50,
+        
+        "decouvert_Autorisé":"Oui"
+    
+    },
+    
+    {
+        
+        "code_agence":523,
+        
+        "id_cli":"EE559402",
+        
+        "id_compte":85083945486,
+        
+        "type_compte":"Compte Courant",
+        
+        "solde":0,
+        
+        "decouvert_Autorisé":"Non"
+    
+    },   
+    
+    {
+        
+        "code_agence":523,
+        
+        "id_cli":"EE559402",
+        
+        "id_compte":99110063070,
+        
+        "type_compte":"Livret A",
+        
+        "solde":23,
+        
+        "decouvert_Autorisé":"Oui"
+    
+    },  
+    
+    {
+        
+        "code_agence":523,
+        
+        "id_cli":"IV256213",
+        
+        "id_compte":26619119662,
+        
+        "type_compte":"Compte courant",
+        
+        "solde":500,
+        
+        "decouvert_Autorisé":"Non"
+    
+    },  
+    
+    {
+        
+        "code_agence":472,
+        
+        "id_cli":"LC307682",
+        
+        "id_compte":97157725031,
+        
+        "type_compte":"PEL",
+        
+        "solde":8000,
+        
+        "decouvert_Autorisé":"Oui"
+    
+    },   
+    
+    {
+        
+        "code_agence":678,
+        
+        "id_cli":"TW711312",
+        
+        "id_compte":22246373433,
+        
+        "type_compte":"Livret A",
+        
+        "solde":4679,
+        
+        "decouvert_Autorisé":"Non"
+    
+    }       
 ]

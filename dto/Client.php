@@ -6,15 +6,15 @@ class Client {
     private string $prenom_Cli;
     private string $date_de_naissance;
     private string $mail;
-    private Agence $agence;
+    private int $id_agence;
     
-    public function __construct(int $id_Client, string $nom_Cli,string $prenom_Cli,string $date_de_naissance,string $mail,Agence $agence){
+    public function __construct(int $id_Client, string $nom_Cli,string $prenom_Cli,string $date_de_naissance,string $mail,int $id_agence){
         $this->id       = $id_Client;
         $this->nom      = $nom_Cli;
         $this->prenom   = $prenom_Cli;
         $this->date     = $date_de_naissance;
         $this->mail     = $mail;
-        $this->agence   = $agence;
+        $this->agence   = $id_agence;
     }
 
     public function getid_Client() {
@@ -53,7 +53,7 @@ class Client {
         return $this->mail = $mail;
     }
 
-    public function getAgence() {
+    public function getid_Agence() {
         return $this-> agence;
         }
     

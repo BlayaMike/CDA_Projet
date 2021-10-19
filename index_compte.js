@@ -42,10 +42,9 @@ function test(){
 
 test();
 
-
+*/
 fetch(".\\bd\\Compte.json")
     .then(res => res.json())
     .then(data => console.log(data));
 
 
-*/
