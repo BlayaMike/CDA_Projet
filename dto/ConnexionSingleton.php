@@ -12,10 +12,10 @@ class ConnexionSingleton{
     }
     public static function getConnexionByDetails(
         string $host = 'localhost',
-        string $db = 'postgres',
+        string $db = 'CDA',
         string $port = '5432',
         string $username = 'postgres',
-        string $password = 'adapeco') : PDO
+        string $password = 'adapeco')
     {
             $connStr = "pgsql:host=$host;port=$port;dbname=$db;user=$username;password=$password";
             

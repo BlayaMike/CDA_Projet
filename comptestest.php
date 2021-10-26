@@ -1,27 +1,19 @@
 <?php
 
-require("constants.php");
+require 'dto/Agence.php';
+
+$Agence = new Agence();
+$agences = $Agence->getAll();
 
 
-$fichierAgence = FILE_AGENCE;
-$fichierClient = FILE_CLIENT;
-$fichierCompte = FILE_COMPTE;
-
-$comptes=[];
-
-$fp=fopen($fichierCompte,"r");
-    while(!feof($fp)){
-        $comptes[]= fgetcsv($fp,1024,",");
-    }        
-fclose($fp);
-
-foreach ($comptes as $val) {
-    if($val!=null){
-        if($_POST["Numero_Compte"]==$val[2]){
-            require("Fiche_Compte.php");
-        }
+foreach ($agences as $agence) {
+    if($agence->getCode_Agence()==1){
+        var_dump($agences);
     }
 }
+
+require "../Fiche_Compte.php";
+
 
 
 ?>

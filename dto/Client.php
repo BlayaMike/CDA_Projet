@@ -11,7 +11,7 @@ class Client {
     private string $mail;
     private int $id_agence;
     
-    public function __construct(int $id_Client, string $nom_Cli,string $prenom_Cli,string $date_de_naissance,string $mail,int $id_agence?PDO $connexion = null){
+    public function __construct(int $id_Client=null, string $nom_Cli=null,string $prenom_Cli=null,string $date_de_naissance=null,string $mail=null,int $id_agence,?PDO $connexion = null){
         if ($this->connexion == null) {
             $this->connexion = ConnexionSingleton::getConnexion();
         } else {
@@ -27,8 +27,11 @@ class Client {
     }
 
     public function getid_Client() {
-    return $this-> id;
+        return $this-> id;
     }
+    public function setid_Client(int $id_Client) {
+        return $this->id = $id_Client;
+        }
     
     public function getnom_Cli() {
         return $this-> nom;
@@ -64,19 +67,21 @@ class Client {
 
     public function getid_Agence() {
         return $this-> agence;
-        }
+    }
     
     public function getAll(): array
     {
-        $sql =  "select * from agence as a";
+        $sql =  "select * from client as c";
         $resultset = $this->connexion->query($sql);
         $resultats = [];
         while ($row = $resultset->fetch(PDO::FETCH_ASSOC)) {
-            $AgenceEnCours = new Employe();
-            $AgenceEnCours->setcodeAgence($row['code_agence']);
-            $AgenceEnCours->setNom($row['nom']);
-            $AgenceEnCours->setAdress($row['adress']);
-            $resultats[] = $AgenceEnCours;
+            $ClientEnCours = new Client();
+            $ClientEnCours->setid_Client($row['numero']);
+            $ClientEnCours->setnom_Cli($row['nom']);
+            $ClientEnCours->setprenom_Cli($row['prenom']);
+            $ClientEnCours->setdate_de_naissance($row['date_de_naissance']);
+            $ClientEnCours->setmail($row['email']);
+            $resultats[] = $ClientEnCours;
         }
         return $resultats;
     }

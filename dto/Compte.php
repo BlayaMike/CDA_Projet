@@ -1,5 +1,7 @@
 <?php
 
+require 'dto/ConnexionSingleton.php';
+
 class Compte {
 
     private int $id_compte;
@@ -9,7 +11,12 @@ class Compte {
     private Client $client;
     private Agence $agence;
 
-    public function __construct(int $id_compte,string $type_Compte,int $solde,bool $aDecovert,Client $client, Agence $agence){
+    public function __construct(int $id_compte,string $type_Compte,int $solde,bool $aDecovert,Client $client, Agence $agence,?PDO $connexion = null){
+        if ($this->connexion == null) {
+            $this->connexion = ConnexionSingleton::getConnexion();
+        } else {
+            $this->connexion = $connexion;
+        }
         $this->id               = $id_compte;
         $this->typecompte       = $type_Compte;
         $this->solde            = $solde;
@@ -20,9 +27,13 @@ class Compte {
     }
 
     public function getid_Compte() {
-    return $this-> id;
+        return $this-> id;
     }
     
+    public function setid_Compte(int $id_compte) {
+        return $this-> id = $id_compte;
+    }
+
     public function gettype_compte() {
         return $this-> typeCompte;
     }
@@ -53,6 +64,21 @@ class Compte {
 
     public function getagence() {
         return $this-> agence  ;
+    }
+    public function getAll(): array
+    {
+        $sql =  "select * from agence as a";
+        $resultset = $this->connexion->query($sql);
+        $resultats = [];
+        while ($row = $resultset->fetch(PDO::FETCH_ASSOC)) {
+            $CompteEnCours = new Compte();
+            $CompteEnCours->setid_Compte($row['numero']);
+            $CompteEnCours->settype_compte($row['type_compte']);
+            $CompteEnCours->setsolde($row['Solde']);
+            $CompteEnCours->setaDecovert($row['decouvert']);
+            $resultats[] = $CompteEnCours;
+        }
+        return $resultats;
     }
 }
 ?>
