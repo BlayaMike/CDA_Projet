@@ -82,6 +82,9 @@
       <button type="submit" value="ok" >Valider</button>
     </form>    
   </div>  
+  <div id="A">
+
+  </div>
   <div id="form2" hidden>
     <form >
       <h1>Rechercher un Compte </h1>

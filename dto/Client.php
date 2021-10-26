@@ -1,4 +1,7 @@
 <?php
+
+require_once 'dto\ConnexionSingleton.php';
+
 class Client {
 
     private int $id_Client;
@@ -8,7 +11,13 @@ class Client {
     private string $mail;
     private int $id_agence;
     
-    public function __construct(int $id_Client, string $nom_Cli,string $prenom_Cli,string $date_de_naissance,string $mail,int $id_agence){
+    public function __construct(int $id_Client, string $nom_Cli,string $prenom_Cli,string $date_de_naissance,string $mail,int $id_agence?PDO $connexion = null){
+        if ($this->connexion == null) {
+            $this->connexion = ConnexionSingleton::getConnexion();
+        } else {
+            $this->connexion = $connexion;
+        }
+    
         $this->id       = $id_Client;
         $this->nom      = $nom_Cli;
         $this->prenom   = $prenom_Cli;
@@ -57,8 +66,20 @@ class Client {
         return $this-> agence;
         }
     
-
-
+    public function getAll(): array
+    {
+        $sql =  "select * from agence as a";
+        $resultset = $this->connexion->query($sql);
+        $resultats = [];
+        while ($row = $resultset->fetch(PDO::FETCH_ASSOC)) {
+            $AgenceEnCours = new Employe();
+            $AgenceEnCours->setcodeAgence($row['code_agence']);
+            $AgenceEnCours->setNom($row['nom']);
+            $AgenceEnCours->setAdress($row['adress']);
+            $resultats[] = $AgenceEnCours;
+        }
+        return $resultats;
+    }
 }
 
 ?>

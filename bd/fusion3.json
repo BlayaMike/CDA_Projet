@@ -1,11 +1,9 @@
 [
     {
-        
         "CODE_AGENCE": 114,
         "NOM_AGENCE": "CA",
         "ADRESSE_AGENCE": "7 rue des banques",
-        "Clients":
-        [
+        "CLIENT":[
             {   "ID_CLI":"NE575677",
                 "NOM_CLI":"Blaya",
                 "PRENOM_CLI":"Mike",
@@ -46,8 +44,7 @@
         "CODE_AGENCE": 684,
         "NOM_AGENCE": "CM",
         "ADRESSE_AGENCE": "8 rue des banques",
-        "Clients":
-        [
+        "CLIENT":[
             {   "ID_CLI":"IN153329",
                 "NOM_CLI":"Zil",
                 "PRENOM_CLI":"Fa",
@@ -78,8 +75,7 @@
         "CODE_AGENCE": 472,
         "NOM_AGENCE": "PO",
         "ADRESSE_AGENCE": "30 boulevard Frontois",
-        "Clients":
-        [
+        "CLIENT":[
             {   "ID_CLI":"LC307682",
                 "NOM_CLI":"Dalton",
                 "PRENOM_CLI":"David",
@@ -100,8 +96,7 @@
         "CODE_AGENCE": 523,
         "NOM_AGENCE": "KP",
         "ADRESSE_AGENCE": "49 bis rue du temple",
-        "Clients":
-        [
+        "CLIENT":[
             {   "ID_CLI":"EE559402",
                 "NOM_CLI":"de Nazareth",
                 "PRENOM_CLI":"Jesus",
@@ -120,30 +115,27 @@
                     }
                 ]
             },
-            { 
-            "ID_CLI":"IV256213",
-            "NOM_CLI":"Freg",
-            "PRENOM_CLI":"Martin",
-            "DATE_DE_NAISSANCE":"02/09/54",
-            "EMAIL":"freg@gmail.com",
-            "COMPTES":[
-                {   "id_compte":26619119662,
-                    "type_compte":"Compte Courant",
-                    "solde":500,    
-                    "decouvert_Autorisé":"Non"
-                }
-            ]
+            {   "ID_CLI":"IV256213",
+                "NOM_CLI":"Freg",
+                "PRENOM_CLI":"Martin",
+                "DATE_DE_NAISSANCE":"02/09/54",
+                "EMAIL":"freg@gmail.com",
+                "COMPTES":[
+                    {   "id_compte":26619119662,
+                        "type_compte":"Compte Courant",
+                        "solde":500,    
+                        "decouvert_Autorisé":"Non"
+                    }
+                ]
             } 
         ]
     },                   
         
     {
-        
         "CODE_AGENCE": 678,
         "NOM_AGENCE": "CZ",
         "ADRESSE_AGENCE": "46 rue des peupliers",
-        "Clients":
-        [
+        "CLIENT":[
             {   "ID_CLI":"TW711312",
                 "NOM_CLI":"Delporte",
                 "PRENOM_CLI":"Clay",
@@ -158,5 +150,5 @@
                 ]
             } 
         ]
-    }                                       
+    }
 ]

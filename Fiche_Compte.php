@@ -1,24 +1,21 @@
 <?php 
-require "dto\Compte.php";
 
-if(!isset($_GET["id_compte"])){
-   echo "<div> Erreur </div>";
-}else{
 
-$idClient = intval($_GET["id_client"]); 
-$compte1 = new Compte();
-$client = $clientDao->getById($id_compte);
+require_once '../dao/EmployeDao.php';
+require_once '../dao/ServiceDao.php';
+$employeDao = new EmployeDao();
+$serviceDao = new ServiceDao();
+$employes = $employeDao->getAll();
+
+
+foreach ($employes as $employe) {
+    if($employe->getService()!=null && $employe->getService()->getNumeroService()!=null){   
+        $monService = $serviceDao->getById($employe->getService()->getNumeroService()); 
+        $employe->setService($monService );
+    }
+}
+
+require "../views/ListeEmployeView.php";
+
+
 ?>
-<div>
-    <h2>Liste Clients : </h2>
-    <ul>
-        <li> id : <?php echo $client->getId();?></li>
-        <li> Nom : <?php echo  $client->getNom();?></li>
-        <li> Prenom : <?php echo  $client->getPrenom();?></li>
-        <li> Date de naissance : <?php echo  $client->getDateNaissance()->format("d-m-Y");?></li>
-        <li> Telephone : <?php echo  $client->getTelephone();?></li>
-        <li> Email : <?php echo $client->getEmail();?></li>
-        <li> Adresse : <?php echo $client->getAdresse();?></li>
-    </ul>
-</div>
-<?php }?>
