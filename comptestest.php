@@ -1,18 +1,16 @@
 <?php
 
-require 'dto/Agence.php';
+require 'dto/Compte.php';
 
-$Agence = new Agence();
-$agences = $Agence->getAll();
+$compte = new Compte();
 
 
-foreach ($agences as $agence) {
-    if($agence->getCode_Agence()==1){
-        var_dump($agences);
-    }
+$comptes = $compte->getAll();
+
+foreach ($comptes as $compte) {
+    echo($compte->gettype_compte());
 }
 
-require "../Fiche_Compte.php";
 
 
 

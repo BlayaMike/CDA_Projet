@@ -10,13 +10,10 @@ class Client {
     private string $date_de_naissance;
     private string $mail;
     private int $id_agence;
+    private ?PDO $connexion= null;
     
-    public function __construct(int $id_Client=null, string $nom_Cli=null,string $prenom_Cli=null,string $date_de_naissance=null,string $mail=null,int $id_agence,?PDO $connexion = null){
-        if ($this->connexion == null) {
-            $this->connexion = ConnexionSingleton::getConnexion();
-        } else {
-            $this->connexion = $connexion;
-        }
+    public function __construct(int $id_Client=null, string $nom_Cli=null,string $prenom_Cli=null,string $date_de_naissance=null,string $mail=null,int $id_agence=null,?PDO $connexion = null){
+        
     
         $this->id       = $id_Client;
         $this->nom      = $nom_Cli;
@@ -24,6 +21,11 @@ class Client {
         $this->date     = $date_de_naissance;
         $this->mail     = $mail;
         $this->agence   = $id_agence;
+        if ($this->connexion == null) {
+            $this->connexion = ConnexionSingleton::getConnexion();
+        } else {
+            $this->connexion = $connexion;
+        }
     }
 
     public function getid_Client() {
@@ -84,6 +86,26 @@ class Client {
             $resultats[] = $ClientEnCours;
         }
         return $resultats;
+    }
+
+    /**
+     * Get the value of connexion
+     */ 
+    public function getConnexion()
+    {
+        return $this->connexion;
+    }
+
+    /**
+     * Set the value of connexion
+     *
+     * @return  self
+     */ 
+    public function setConnexion($connexion)
+    {
+        $this->connexion = $connexion;
+
+        return $this;
     }
 }
 

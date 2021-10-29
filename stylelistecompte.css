@@ -15,22 +15,22 @@
 }
 
 
-#colonne1 {
+#colonne5 {
     display: flex;
     flex: 25%;
     flex-direction: column;
 }
-#colonne2 {
+#colonne6 {
     display: flex;
     flex: 25%;
     flex-direction: column;
 }
-#colonne3 {
+#colonne7 {
     display: flex;
     flex: 25%;
     flex-direction: column;
 }
-#colonne4 {
+#colonne8 {
     display: flex;
     flex: 25%;
     flex-direction: column;

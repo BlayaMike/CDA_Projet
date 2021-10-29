@@ -13,12 +13,12 @@
   
 <nav> 
 
-<h1 id="logo"><a href = "Accueil.php">| THE-BANK $ |</a></h1>
+<h1 id="logo"><a href = "index.php">| THE-BANK $ |</a></h1>
 
 <ul class="liste-items">
           
 <li class="items">    
-    <a href = "Accueil.php">Accueil</a>
+    <a href = "index.php">Accueil</a>
 </li>
           
 <li class="items">

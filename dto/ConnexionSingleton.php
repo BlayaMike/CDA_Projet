@@ -15,7 +15,7 @@ class ConnexionSingleton{
         string $db = 'CDA',
         string $port = '5432',
         string $username = 'postgres',
-        string $password = 'adapeco')
+        string $password = 'adapeco') : PDO
     {
             $connStr = "pgsql:host=$host;port=$port;dbname=$db;user=$username;password=$password";
             

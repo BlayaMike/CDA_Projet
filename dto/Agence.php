@@ -1,22 +1,26 @@
 <?php
 
-require 'dto/ConnexionSingleton.php';
+require_once 'dto/ConnexionSingleton.php';
 
 
 class Agence {
 
-    private int $code_Agence;
+    private ?int $code_Agence;
     private string $nom_Agence;
     private string $adress_Agence;
+    private ?PDO $connexion = null;
     
-    public function __construct(int $code_Agence=null, string $nom_Agence=null,string $adress_Agence=null,?PDO $connexion = null){
+    public function __construct(?int $code_Agence=null, string $nom_Agence=null,string $adress_Agence=null,?PDO $connexion = null){
+        $this->code_Agence  = $code_Agence;
+        $this->nom          = $nom_Agence;
+        $this->adress       = $adress_Agence;
         if ($this->connexion == null) {
             $this->connexion = ConnexionSingleton::getConnexion();
         } else {
             $this->connexion = $connexion;
-        }
-        $this->nom      = $nom_Agence;
-        $this->adress   = $adress_Agence;
+        } 
+
+        
     }
     public function getCode_Agence(){
         return $this->code;
@@ -49,6 +53,26 @@ class Agence {
             $resultats[] = $AgenceEnCours;
         }
         return $resultats;
+    }
+
+    /**
+     * Get the value of connexion
+     */ 
+    public function getConnexion()
+    {
+        return $this->connexion;
+    }
+
+    /**
+     * Set the value of connexion
+     *
+     * @return  self
+     */ 
+    public function setConnexion($connexion)
+    {
+        $this->connexion = $connexion;
+
+        return $this;
     }
 }
 

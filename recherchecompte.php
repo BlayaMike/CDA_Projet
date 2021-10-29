@@ -13,12 +13,12 @@
   
   <nav> 
 
-<h1 id="logo"><a href = "Accueil.php">| THE-BANK $ |</a></h1>
+<h1 id="logo"><a href = "index.php">| THE-BANK $ |</a></h1>
 
 <ul class="liste-items">
           
 <li class="items">    
-    <a href = "Accueil.php">Accueil</a>
+    <a href = "index.php">Accueil</a>
 </li>
           
 <li class="items">
@@ -76,10 +76,10 @@
   <section id="recherche agence" >
   <section class="hero">
   <div id="form1" >
-    <form action="comptestest.php" method="post">
+    <form action="comptestest.php" method="POST">
       <h1>Rechercher un Compte </h1>
       <input type="text" name="Numero_Compte" >
-      <button type="submit" value="ok" >Valider</button>
+      <input type="submit" value="Valider">
     </form>    
   </div>  
   <div id="A">
