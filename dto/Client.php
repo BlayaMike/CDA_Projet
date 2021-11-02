@@ -117,9 +117,9 @@ class Client {
         $id_agence = $newClient->getid_Agence();
         $preparedQuery->bindParam(':code_Agence', $numero);
         $preparedQuery->bindParam(':nom_Agence', $nom_Client);
-        $preparedQuery->bindParam(':adress_Agence', $date_de_naissance);
-        $preparedQuery->bindParam(':adress_Agence', $email);
-        $preparedQuery->bindParam(':adress_Agence', $id_agence);
+        $preparedQuery->bindParam(':date_de_naissance', $date_de_naissance);
+        $preparedQuery->bindParam(':email', $email);
+        $preparedQuery->bindParam(':id_agence', $id_agence);
         $preparedQuery->execute();
 
         return  $newClient;
