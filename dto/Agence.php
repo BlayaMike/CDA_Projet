@@ -23,13 +23,13 @@ class Agence {
         
     }
     public function getCode_Agence(){
-        return $this->code;
+        return $this->code_Agence;
     }
     public function setCode_Agence(int $code_Agence){
-        return $this->code = $code_Agence;
+        return $this->code_Agence = $code_Agence;
     }
     public function getNom_Agence(){
-        return $this->code;
+        return $this->nom;
     }        
     public function setNom_Agence(string $nom_Agence){
         return $this->nom = $nom_Agence;
@@ -54,7 +54,37 @@ class Agence {
         }
         return $resultats;
     }
+    public function setAgence(?int $code_Agence, string $nom_Agence,string $adress_Agence)
+    {
+        $sql =  "insert into agence values (nextval('seq_agence'),'$code_Agence','$nom_Agence','$adress_Agence');";
+        $preparedQuery = $this->connexion->prepare($sql);
+        $preparedQuery->execute();
+    }
+    public function deleteAgence(?int $code_Agence)
+    {
+        $sql =  "delete from agence as a where a.code_agence=:code_Agence";
+        $preparedQuery = $this->connexion->prepare($sql);
+        $preparedQuery->bindParam(':code_Agence', $code_Agence);
+        $preparedQuery->execute();
+    }
+    public function updateAgence(Agence $newAgence) : ?Agence
+    {
+        $sql = "UPDATE agence 
+                set code_agence=:code_Agence,
+                    nom=:nom_Agence, 
+                    adresse=:adress_Agence 
+                where code_agence = :code_Agence";
+        $preparedQuery = $this->connexion->prepare($sql);
+        $code_Agence = $newAgence->getCode_Agence();
+        $nom = $newAgence->getNom_Agence();
+        $adress = $newAgence->getAdress();
+        $preparedQuery->bindParam(':code_Agence', $code_Agence);
+        $preparedQuery->bindParam(':nom_Agence', $nom);
+        $preparedQuery->bindParam(':adress_Agence', $adress);
+        $preparedQuery->execute();
 
+        return  $newAgence;
+    }
     /**
      * Get the value of connexion
      */ 

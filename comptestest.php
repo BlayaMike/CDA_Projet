@@ -1,16 +1,18 @@
 <?php
 
-require 'dto/Compte.php';
+require 'dto/Agence.php';
 
-$compte = new Compte();
+$agence = new Agence();
 
+$agence2 = new Agence(006,"BNP","11 rue des banques");
 
-$comptes = $compte->getAll();
-
-foreach ($comptes as $compte) {
-    echo($compte->gettype_compte());
+//$agence->setAgence(006,"BNP","11 rue des banques");
+//$agence->deleteAgence(006);
+//$agence->updateAgence($agence2);
+/*
+foreach ($agences as $agence) {
 }
-
+*/
 
 
 
